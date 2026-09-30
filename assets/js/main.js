@@ -208,6 +208,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 8.1 FAQ Sticky Form Dynamic Boundary (Synchronize right column height with questions list)
+  const faqsQuestionsList = document.getElementById('faqs-questions-list');
+  const faqStickyContainer = document.getElementById('faq-sticky-container');
+
+  if (faqsQuestionsList && faqStickyContainer) {
+    function syncFaqHeight() {
+      if (window.innerWidth >= 1024) {
+        const listHeight = faqsQuestionsList.offsetHeight;
+        faqStickyContainer.style.minHeight = listHeight + 'px';
+      } else {
+        faqStickyContainer.style.minHeight = '';
+      }
+    }
+
+    window.addEventListener('resize', syncFaqHeight);
+    window.addEventListener('load', syncFaqHeight);
+    syncFaqHeight();
+
+    // Recalculate whenever an accordion item is clicked or toggled
+    const faqButtons = faqsQuestionsList.querySelectorAll('.faq-button');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        setTimeout(syncFaqHeight, 50);
+        setTimeout(syncFaqHeight, 350);
+      });
+    });
+  }
+
   // 9. Salas Filter Logic (on salas-eventos.html)
   const filterForm = document.getElementById('salas-filter-form');
   if (filterForm) {

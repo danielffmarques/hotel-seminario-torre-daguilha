@@ -199,19 +199,24 @@
 
     <!-- 2. PERGUNTAS FREQUENTES & FORMULÁRIO DE DÚVIDAS -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-        
-        <!-- Coluna Esquerda: Todas as Questões Unificadas (Accordion Contínuo) -->
-        <div class="lg:col-span-7 space-y-4">
-          <div class="mb-6">
-            <span class="text-xs uppercase tracking-widest font-semibold text-[#547985] block mb-1">
-              Esclarecimentos & Informações Úteis
-            </span>
-            <h2 class="font-serif text-2xl sm:text-3xl text-[#173A46] font-bold">
-              Respostas às suas perguntas
-            </h2>
-          </div>
+      
+      <!-- Cabeçalho da Secção (Acima do bloco para que a 1ª pergunta fique perfeitamente alinhada ao topo do formulário) -->
+      <div class="mb-10 max-w-2xl">
+        <span class="text-xs uppercase tracking-widest font-semibold text-[#547985] block mb-1">
+          Esclarecimentos & Informações Úteis
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl text-[#173A46] font-bold">
+          Respostas às suas perguntas
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500 mt-1 leading-relaxed">
+          Tire todas as suas dúvidas sobre estadias, comodidades e serviços, ou utilize o formulário ao lado para contacto direto.
+        </p>
+      </div>
 
+      <div id="faqs-grid-container" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative items-stretch">
+        
+        <!-- Coluna Esquerda: Todas as Questões Unificadas (Accordion Contínuo de FAQ 1 a FAQ 15) -->
+        <div id="faqs-questions-list" class="lg:col-span-7 space-y-4">
           <!-- FAQ 1 -->
           <div class="faq-item bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden transition-all duration-200 hover:border-[#173A46]/40">
             <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-gray-900 hover:text-[#173A46] transition focus:outline-none">
@@ -419,9 +424,9 @@
 
         </div>
 
-        <!-- Coluna Direita: Formulário de Dúvidas que Acompanha o Scroll (Sticky) -->
-        <div class="lg:col-span-5">
-          <div class="sticky top-28 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+        <!-- Coluna Direita: Formulário de Dúvidas que Acompanha o Scroll (Limitado entre FAQ 1 e FAQ 15) -->
+        <div id="faq-sticky-container" class="lg:col-span-5 relative h-full">
+          <div id="faq-sticky-card" class="sticky top-24 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 shadow-sm">
             <div class="mb-5 pb-3 border-b border-gray-100">
               <span class="text-[11px] uppercase tracking-widest font-semibold text-[#A88B63] block mb-1">
                 Apoio ao Hóspede

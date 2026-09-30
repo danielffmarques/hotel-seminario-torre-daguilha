@@ -477,207 +477,145 @@
       </div>
     </section>
 
-    <!-- 3. DESCOBRIR A REGIÃO (CARROSSEL DE ATIVIDADES) -->
-    <section class="bg-[#FAF9F6] border-y border-gray-200 py-12 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 3. DESCOBRIR A REGIÃO: ESPAÇOS E PROXIMIDADES -->
+    <section class="bg-[#FAF9F6] border-y border-gray-200 py-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Cabeçalho Editorial -->
-        <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="max-w-2xl mx-auto text-center mb-8">
           <h2 class="font-serif text-3xl sm:text-4xl text-[#173A46] font-bold mb-3">
             Descubra o que existe para além do hotel
           </h2>
-          <p class="text-base text-gray-600 font-light leading-relaxed">
-            A poucos minutos do hotel, explore o melhor da região dividido em quatro áreas essenciais.
+          <p class="text-sm text-gray-600 font-light leading-relaxed">
+            Espaços de referência e pontos de interesse na região com as respetivas distâncias a partir da Quinta da Torre d’Aguilha.
           </p>
         </div>
 
-        <!-- Carrossel de Atividades -->
-        <div class="relative atividades-carousel-container" id="atividades-carousel">
+        <!-- Lista em 2 Colunas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
           
-          <!-- Seta Esquerda -->
-          <button type="button" id="atividades-prev-btn" class="absolute left-2 sm:-left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white text-[#173A46] border border-gray-200 shadow-lg hover:bg-[#173A46] hover:text-white transition-all flex items-center justify-center group focus:outline-none" aria-label="Atividade anterior">
-            <svg class="w-5 h-5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          </button>
-
-          <!-- Seta Direita -->
-          <button type="button" id="atividades-next-btn" class="absolute right-2 sm:-right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white text-[#173A46] border border-gray-200 shadow-lg hover:bg-[#173A46] hover:text-white transition-all flex items-center justify-center group focus:outline-none" aria-label="Próxima atividade">
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </button>
-
-          <!-- Viewport do Carrossel -->
-          <div class="overflow-hidden rounded-2xl">
-            <div id="atividades-carousel-track" class="flex -mx-3 sm:-mx-4">
-              
-              <!-- Slide 1: Praias & Costa -->
-              <div class="w-full md:w-1/2 flex-shrink-0 px-3 sm:px-4">
-                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-7 flex flex-col justify-between h-full hover:shadow-md transition duration-300">
-                  <div>
-                    <div class="flex items-center justify-between gap-3 mb-3">
-                      <span class="text-xs uppercase tracking-widest font-semibold text-[#547985]">Praias & Costa</span>
-                      <span class="text-xs font-semibold text-gray-500 bg-[#FAF9F6] border border-gray-200 px-2.5 py-0.5 rounded-full">
-                        A partir de 5 min (2.7 km)
-                      </span>
-                    </div>
-                    <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">
-                      Costa do Estoril & Cascais
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-5 font-light">
-                      Areal extenso e o emblemático paredão marítimo da Linha de Cascais. Escolas de surf de referência, praias abrigadas para famílias e restaurantes costeiros com peixe fresco.
-                    </p>
-                    
-                    <div class="space-y-2 mb-5 text-xs text-gray-700">
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Praia de Carcavelos</span>
-                        <span class="text-gray-500">2.7 km • 5 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Praia da Parede & Costa do Estoril</span>
-                        <span class="text-gray-500">5.5 km • 9 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5">
-                        <span class="font-medium text-[#173A46]">Baía e Marina de Cascais</span>
-                        <span class="text-gray-500">12.0 km • 15 min</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="relative h-44 rounded-xl overflow-hidden group">
-                    <img src="assets/images/galeria/foto_hotel_media_39.jpg" alt="Praias e Costa do Estoril" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <span class="absolute bottom-2.5 right-2.5 bg-white/95 text-[#173A46] text-xs font-semibold px-2.5 py-1 rounded shadow-sm">
-                      Praias a 5 min
-                    </span>
-                  </div>
-                </div>
+          <!-- Coluna 1 -->
+          <div class="space-y-3">
+            
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">São Domingos de Rana</h3>
+                <span class="text-xs text-gray-500">Centro da vila, Cascais</span>
               </div>
-
-              <!-- Slide 2: Monumentos & História -->
-              <div class="w-full md:w-1/2 flex-shrink-0 px-3 sm:px-4">
-                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-7 flex flex-col justify-between h-full hover:shadow-md transition duration-300">
-                  <div>
-                    <div class="flex items-center justify-between gap-3 mb-3">
-                      <span class="text-xs uppercase tracking-widest font-semibold text-[#547985]">Monumentos & História</span>
-                      <span class="text-xs font-semibold text-gray-500 bg-[#FAF9F6] border border-gray-200 px-2.5 py-0.5 rounded-full">
-                        A partir de 15 min (10.9 km)
-                      </span>
-                    </div>
-                    <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">
-                      Belém & Monumentos Nacionais
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-5 font-light">
-                      O berço dos Descobrimentos na margem do Rio Tejo. Monumentos classificados como Património Mundial, ampla oferta de museus e passeios à beira-rio.
-                    </p>
-                    
-                    <div class="space-y-2 mb-5 text-xs text-gray-700">
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Torre de Belém</span>
-                        <span class="text-gray-500">10.9 km • 15 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Mosteiro dos Jerónimos</span>
-                        <span class="text-gray-500">11.7 km • 15 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5">
-                        <span class="font-medium text-[#173A46]">Padrão dos Descobrimentos</span>
-                        <span class="text-gray-500">11.8 km • 15 min</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="relative h-44 rounded-xl overflow-hidden group">
-                    <img src="assets/images/galeria/foto_hotel_media_11.jpg" alt="Monumentos de Belém" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <span class="absolute bottom-2.5 right-2.5 bg-white/95 text-[#173A46] text-xs font-semibold px-2.5 py-1 rounded shadow-sm">
-                      Monumentos UNESCO
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3: Natureza & Parques -->
-              <div class="w-full md:w-1/2 flex-shrink-0 px-3 sm:px-4">
-                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-7 flex flex-col justify-between h-full hover:shadow-md transition duration-300">
-                  <div>
-                    <div class="flex items-center justify-between gap-3 mb-3">
-                      <span class="text-xs uppercase tracking-widest font-semibold text-[#547985]">Natureza & Parques</span>
-                      <span class="text-xs font-semibold text-gray-500 bg-[#FAF9F6] border border-gray-200 px-2.5 py-0.5 rounded-full">
-                        A partir de 15 min (9.5 km)
-                      </span>
-                    </div>
-                    <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">
-                      Serra de Sintra & Parques
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-5 font-light">
-                      O misticismo da serra, jardins românticos e palácios imersos na natureza. Trilhos pedestres entre arvoredo secular e miradouros únicos voltados para o oceano.
-                    </p>
-                    
-                    <div class="space-y-2 mb-5 text-xs text-gray-700">
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Palácio Nacional da Pena</span>
-                        <span class="text-gray-500">9.5 km • 15 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Quinta da Regaleira & Poço</span>
-                        <span class="text-gray-500">10.5 km • 18 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5">
-                        <span class="font-medium text-[#173A46]">Castelo dos Mouros</span>
-                        <span class="text-gray-500">10.0 km • 18 min</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="relative h-44 rounded-xl overflow-hidden group">
-                    <img src="assets/images/galeria/foto_hotel_media_25.jpg" alt="Natureza e Parques de Sintra" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <span class="absolute bottom-2.5 right-2.5 bg-white/95 text-[#173A46] text-xs font-semibold px-2.5 py-1 rounded shadow-sm">
-                      Serra & Misticismo
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4: Gastronomia & Cultura -->
-              <div class="w-full md:w-1/2 flex-shrink-0 px-3 sm:px-4">
-                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-7 flex flex-col justify-between h-full hover:shadow-md transition duration-300">
-                  <div>
-                    <div class="flex items-center justify-between gap-3 mb-3">
-                      <span class="text-xs uppercase tracking-widest font-semibold text-[#547985]">Gastronomia & Lazer</span>
-                      <span class="text-xs font-semibold text-gray-500 bg-[#FAF9F6] border border-gray-200 px-2.5 py-0.5 rounded-full">
-                        Em redor do hotel
-                      </span>
-                    </div>
-                    <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">
-                      Sabores & Tradições Locais
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-5 font-light">
-                      A gastronomia que define a costa e a capital. O peixe fresco e marisco nos restaurantes de Cascais, a doçaria histórica conventual e os afamados vinhos de Carcavelos.
-                    </p>
-                    
-                    <div class="space-y-2 mb-5 text-xs text-gray-700">
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Restauração e Peixe da Costa</span>
-                        <span class="text-gray-500">Carcavelos & Cascais</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5 border-b border-gray-100">
-                        <span class="font-medium text-[#173A46]">Pastéis de Belém</span>
-                        <span class="text-gray-500">11.9 km • 15 min</span>
-                      </div>
-                      <div class="flex items-center justify-between py-1.5">
-                        <span class="font-medium text-[#173A46]">Vinho Generoso de Carcavelos DOC</span>
-                        <span class="text-gray-500">3.0 km • 6 min</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="relative h-44 rounded-xl overflow-hidden group">
-                    <img src="assets/images/galeria/foto_hotel_media_36.jpg" alt="Gastronomia e Tradição Regional" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <span class="absolute bottom-2.5 right-2.5 bg-white/95 text-[#173A46] text-xs font-semibold px-2.5 py-1 rounded shadow-sm">
-                      Sabores da Região
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">1.1 km</span>
             </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Praia de Carcavelos</h3>
+                <span class="text-xs text-gray-500">Costa do Estoril, Cascais</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">2.7 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Estação de Comboios de Carcavelos</h3>
+                <span class="text-xs text-gray-500">Linha de Cascais (CP)</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">2.7 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Praia da Parede</h3>
+                <span class="text-xs text-gray-500">Parede, Cascais</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">5.5 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Palácio Nacional da Pena</h3>
+                <span class="text-xs text-gray-500">Serra de Sintra</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">9.5 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Castelo dos Mouros</h3>
+                <span class="text-xs text-gray-500">Serra de Sintra</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.0 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Quinta da Regaleira</h3>
+                <span class="text-xs text-gray-500">Vila de Sintra</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.5 km</span>
+            </div>
+
           </div>
+
+          <!-- Coluna 2 -->
+          <div class="space-y-3">
+            
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Torre de Belém</h3>
+                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.9 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Mosteiro dos Jerónimos</h3>
+                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.7 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Padrão dos Descobrimentos</h3>
+                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.8 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Pastéis de Belém</h3>
+                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.9 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Vila Histórica e Marina de Cascais</h3>
+                <span class="text-xs text-gray-500">Cascais</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">12.0 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Ponte 25 de Abril</h3>
+                <span class="text-xs text-gray-500">Ligação Lisboa – Almada</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">14.2 km</span>
+            </div>
+
+            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+              <div>
+                <h3 class="font-semibold text-sm text-[#173A46]">Aeroporto Humberto Delgado</h3>
+                <span class="text-xs text-gray-500">Lisboa</span>
+              </div>
+              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">19.1 km</span>
+            </div>
+
+          </div>
+
         </div>
 
       </div>

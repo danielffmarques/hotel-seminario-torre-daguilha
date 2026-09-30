@@ -435,11 +435,11 @@
     </section>
   </main>
 
-  <!-- RODAPÉ -->
+  <!-- RODAPÉ INSTITUCIONAL -->
   <footer class="bg-[#0F242C] text-gray-300 pt-16 pb-12 border-t border-[#547985]/30">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 pb-12 border-b border-white/10 items-start">
-        <!-- Coluna 1: Identidade & Contactos -->
+        <!-- Coluna 1: Marca & Contactos -->
         <div class="space-y-4 flex flex-col items-start text-left max-w-sm w-full mx-auto">
           <div class="flex items-center gap-3">
             <img src="assets/images/logos/logo_hotel_aguilha.png" alt="Hotel Seminário Torre d’Aguilha" class="h-10 w-auto brightness-200">
@@ -449,12 +449,13 @@
             </div>
           </div>
           <p class="text-xs text-gray-400 leading-relaxed text-left">
-            Tutela dos Missionários do Espírito Santo. Um espaço secular de paz, congressos e natureza na Linha de Cascais.
+            Tutela da Congregação dos Missionários do Espírito Santo. Espaço de tranquilidade, congressos, retiros e natureza na Linha de Cascais.
           </p>
           <div class="text-xs space-y-1.5 pt-2 text-left">
-            <p><strong class="text-white">Telefone:</strong> +351 214 458 440</p>
-            <p><strong class="text-white">Email:</strong> acolhimento.sta@espiritanos.pt</p>
-            <p><strong class="text-white">Receção:</strong> 08:00 às 00:00</p>
+            <p><strong class="text-white">Telefone:</strong> <a href="tel:+351214458440" class="hover:text-white transition">+351 214 458 440</a></p>
+            <p><strong class="text-white">Telemóvel:</strong> <a href="tel:+351961628608" class="hover:text-white transition">+351 961 628 608</a></p>
+            <p><strong class="text-white">Email:</strong> <a href="mailto:acolhimento.sta@espiritanos.pt" class="hover:text-white transition">acolhimento.sta@espiritanos.pt</a></p>
+            <p><strong class="text-white">Receção:</strong> 08:00 às 00:00 (Presencial)</p>
           </div>
         </div>
 
@@ -467,25 +468,44 @@
             <li><a href="salas-eventos.html" class="hover:text-[#C5A880] transition">Salas de Eventos</a></li>
             <li><a href="sobre-servicos.html" class="hover:text-[#C5A880] transition">O Seminário & Serviços</a></li>
             <li><a href="faqs.html" class="hover:text-[#C5A880] transition">FAQs & Apoio</a></li>
+            <li><a href="faqs.html#como-chegar" class="hover:text-[#C5A880] transition">Como Chegar & Mapa</a></li>
           </ul>
         </div>
 
         <!-- Coluna 3: Localização & Mapa -->
         <div class="flex flex-col items-start text-left max-w-sm w-full mx-auto">
           <h4 class="font-serif text-lg text-white font-medium mb-4 text-left">Localização</h4>
-          <p class="text-xs text-gray-400 mb-3 text-left">Quinta da Torre d’Aguilha, 2785 São Domingos de Rana, Portugal</p>
+          <p class="text-xs text-gray-400 mb-3 text-left">
+            Quinta da Torre d’Aguilha, 2785 São Domingos de Rana, Cascais, Portugal
+          </p>
           <div class="h-28 w-full max-w-[280px] rounded overflow-hidden border border-white/10 mb-2">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.5636531393693!2d-9.336259684654035!3d38.70933607959929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec8fb193d5bf9%3A0xe54e605d5182962e!2sSemin%C3%A1rio%20Torre%20d&#39;Aguilha!5e0!3m2!1spt-PT!2spt!4v1696075000000!5m2!1spt-PT!2spt" 
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa"></iframe>
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              title="Mini Mapa Torre d'Aguilha">
+            </iframe>
           </div>
-          <a href="https://maps.google.com/?q=Seminario+Torre+d'Aguilha+Cascais" target="_blank" rel="noopener" class="text-[11px] font-semibold text-[#C5A880] hover:underline text-left">Abrir no Google Maps ↗</a>
+          <a href="https://maps.google.com/?q=Seminario+Torre+d'Aguilha+Cascais" target="_blank" rel="noopener" class="text-[11px] font-semibold text-[#C5A880] hover:underline flex items-center gap-1 text-left">
+            <span>Abrir no Google Maps</span> ↗
+          </a>
         </div>
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4 text-center">
-        <div>© 2026 Hotel Seminário Torre d’Aguilha. Todos os direitos reservados.</div>
-        <div>Alojamento, conferências e retiros espirituais.</div>
+      <!-- Barra Inferior de Direitos & Condições de Pagamento -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4 text-center sm:text-left">
+        <div>
+          © 2026 Hotel Seminário Torre d’Aguilha. Todos os direitos reservados.<br>
+          <span class="text-gray-400">Nota: O hotel aceita numerário ou transferência/débito direto; não aceita cartões de crédito no balcão presencial.</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="sobre-servicos.html" class="hover:text-gray-300">Termos & Políticas</a>
+          <span>•</span>
+          <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">Livro de Reclamações</a>
+        </div>
       </div>
     </div>
   </footer>

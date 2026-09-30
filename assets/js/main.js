@@ -628,9 +628,141 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close dropdown on outside click
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.lang-dropdown-menu').forEach(m => m.classList.add('hidden'));
-    document.querySelectorAll('.lang-arrow').forEach(a => a.classList.remove('rotate-180'));
-  });
+  // 15. "FAQs" - Atividades Regionais Carousel Logic (Infinite Loop Navigation)
+  const atividadesTrack = document.getElementById('atividades-carousel-track');
+  if (atividadesTrack) {
+    const prevBtn = document.getElementById('atividades-prev-btn');
+    const nextBtn = document.getElementById('atividades-next-btn');
+    const carouselContainer = document.getElementById('atividades-carousel');
+    const originalSlides = Array.from(atividadesTrack.children);
+    const originalCount = originalSlides.length;
+
+    if (originalCount > 0) {
+      const CLONE_COUNT = 2; // Clone 2 slides at each end for smooth infinite loop
+
+      for (let i = 0; i < CLONE_COUNT; i++) {
+        const clone = originalSlides[i].cloneNode(true);
+        clone.removeAttribute('id');
+        clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+        clone.setAttribute('aria-hidden', 'true');
+        atividadesTrack.appendChild(clone);
+      }
+
+      for (let i = originalCount - 1; i >= originalCount - CLONE_COUNT; i--) {
+        const clone = originalSlides[i].cloneNode(true);
+        clone.removeAttribute('id');
+        clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+        clone.setAttribute('aria-hidden', 'true');
+        atividadesTrack.insertBefore(clone, atividadesTrack.firstChild);
+      }
+
+      let currentIndex = CLONE_COUNT;
+      let isTransitioning = false;
+      let autoPlayTimer = null;
+
+      function getSlideWidth() {
+        const first = atividadesTrack.children[0];
+        return first ? first.getBoundingClientRect().width : 0;
+      }
+
+      function moveToSlide(index, animate = true) {
+        if (animate) {
+          atividadesTrack.style.transition = 'transform 500ms ease-out';
+          isTransitioning = true;
+        } else {
+          atividadesTrack.style.transition = 'none';
+        }
+        currentIndex = index;
+        const slideWidth = getSlideWidth();
+        atividadesTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      }
+
+      function nextSlide() {
+        if (isTransitioning) return;
+        moveToSlide(currentIndex + 1, true);
+      }
+
+      function prevSlide() {
+        if (isTransitioning) return;
+        moveToSlide(currentIndex - 1, true);
+      }
+
+      atividadesTrack.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        if (currentIndex >= originalCount + CLONE_COUNT) {
+          moveToSlide(currentIndex - originalCount, false);
+          void atividadesTrack.offsetWidth;
+        } else if (currentIndex < CLONE_COUNT) {
+          moveToSlide(currentIndex + originalCount, false);
+          void atividadesTrack.offsetWidth;
+        }
+      });
+
+      // Safety check in case tab is backgrounded
+      setInterval(() => {
+        if (isTransitioning) {
+          if (currentIndex >= originalCount + CLONE_COUNT) {
+            moveToSlide(currentIndex - originalCount, false);
+            isTransitioning = false;
+          } else if (currentIndex < CLONE_COUNT) {
+            moveToSlide(currentIndex + originalCount, false);
+            isTransitioning = false;
+          }
+        }
+      }, 700);
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayTimer = setInterval(nextSlide, 6000);
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
+      }
+
+      prevBtn?.addEventListener('click', () => {
+        prevSlide();
+        startAutoPlay();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        nextSlide();
+        startAutoPlay();
+      });
+
+      if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+        carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carouselContainer.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carouselContainer.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          const swipeDistance = touchEndX - touchStartX;
+          if (swipeDistance < -40) {
+            nextSlide();
+            startAutoPlay();
+          } else if (swipeDistance > 40) {
+            prevSlide();
+            startAutoPlay();
+          }
+        }, { passive: true });
+      }
+
+      window.addEventListener('resize', () => {
+        moveToSlide(currentIndex, false);
+      });
+      window.addEventListener('load', () => {
+        moveToSlide(currentIndex, false);
+      });
+
+      moveToSlide(CLONE_COUNT, false);
+      startAutoPlay();
+    }
+  }
 });

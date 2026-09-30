@@ -356,85 +356,153 @@ document.addEventListener('DOMContentLoaded', () => {
     handleHeroScroll();
   }
 
-  // 12. "O Seminário & Serviços" - 4 Pillars Carousel Logic (Side Arrows Navigation)
+  // 12. "O Seminário & Serviços" - 4 Pillars Carousel Logic (Infinite Loop Navigation)
   const servicosTrack = document.getElementById('servicos-carousel-track');
   if (servicosTrack) {
     const prevBtn = document.getElementById('servicos-prev-btn');
     const nextBtn = document.getElementById('servicos-next-btn');
     const carouselContainer = document.getElementById('servicos-carousel');
-    const slides = servicosTrack.children;
-    const totalSlides = slides.length || 4;
-    let currentIndex = 0;
-    let autoPlayTimer = null;
+    const originalSlides = Array.from(servicosTrack.children);
+    const originalCount = originalSlides.length;
 
-    function updateCarousel(index) {
-      const isDesktop = window.innerWidth >= 768;
-      const maxIndex = isDesktop ? Math.max(0, totalSlides - 2) : totalSlides - 1;
+    if (originalCount > 0) {
+      const CLONE_COUNT = 2; // Clone 2 slides at each end for seamless infinite loop (desktop 2-per-view & mobile 1-per-view)
 
-      if (index < 0) index = maxIndex;
-      if (index > maxIndex) index = 0;
-      currentIndex = index;
+      // Append clones of the first slides
+      for (let i = 0; i < CLONE_COUNT; i++) {
+        const clone = originalSlides[i].cloneNode(true);
+        clone.removeAttribute('id');
+        clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+        clone.setAttribute('aria-hidden', 'true');
+        servicosTrack.appendChild(clone);
+      }
 
-      const slideWidth = slides[0] ? slides[0].getBoundingClientRect().width : 0;
-      servicosTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
+      // Prepend clones of the last slides in correct order
+      for (let i = originalCount - 1; i >= originalCount - CLONE_COUNT; i--) {
+        const clone = originalSlides[i].cloneNode(true);
+        clone.removeAttribute('id');
+        clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+        clone.setAttribute('aria-hidden', 'true');
+        servicosTrack.insertBefore(clone, servicosTrack.firstChild);
+      }
 
-    function startAutoPlay() {
-      stopAutoPlay();
-      autoPlayTimer = setInterval(() => {
-        updateCarousel(currentIndex + 1);
-      }, 5500);
-    }
+      let currentIndex = CLONE_COUNT;
+      let isTransitioning = false;
+      let autoPlayTimer = null;
 
-    function stopAutoPlay() {
-      if (autoPlayTimer) clearInterval(autoPlayTimer);
-    }
+      function getSlideWidth() {
+        const first = servicosTrack.children[0];
+        return first ? first.getBoundingClientRect().width : 0;
+      }
 
-    // Arrow controls
-    prevBtn?.addEventListener('click', () => {
-      updateCarousel(currentIndex - 1);
-      startAutoPlay();
-    });
-
-    nextBtn?.addEventListener('click', () => {
-      updateCarousel(currentIndex + 1);
-      startAutoPlay();
-    });
-
-    // Pause on hover
-    if (carouselContainer) {
-      carouselContainer.addEventListener('mouseenter', stopAutoPlay);
-      carouselContainer.addEventListener('mouseleave', startAutoPlay);
-
-      // Touch swipe support for mobile/tablet
-      let touchStartX = 0;
-      let touchEndX = 0;
-
-      carouselContainer.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-      }, { passive: true });
-
-      carouselContainer.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        const swipeDistance = touchEndX - touchStartX;
-        if (swipeDistance < -40) {
-          updateCarousel(currentIndex + 1);
-          startAutoPlay();
-        } else if (swipeDistance > 40) {
-          updateCarousel(currentIndex - 1);
-          startAutoPlay();
+      function moveToSlide(index, animate = true) {
+        if (animate) {
+          servicosTrack.style.transition = 'transform 500ms ease-out';
+          isTransitioning = true;
+        } else {
+          servicosTrack.style.transition = 'none';
         }
-      }, { passive: true });
+        currentIndex = index;
+        const slideWidth = getSlideWidth();
+        servicosTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      }
+
+      function nextSlide() {
+        if (isTransitioning) return;
+        moveToSlide(currentIndex + 1, true);
+      }
+
+      function prevSlide() {
+        if (isTransitioning) return;
+        moveToSlide(currentIndex - 1, true);
+      }
+
+      servicosTrack.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        // When moving forward into clone area at end
+        if (currentIndex >= originalCount + CLONE_COUNT) {
+          moveToSlide(currentIndex - originalCount, false);
+          void servicosTrack.offsetWidth;
+        } else if (currentIndex < CLONE_COUNT) {
+          // When moving backward into clone area at start
+          moveToSlide(currentIndex + originalCount, false);
+          void servicosTrack.offsetWidth;
+        }
+      });
+
+      // Safety check in case tab is backgrounded
+      setInterval(() => {
+        if (isTransitioning) {
+          if (currentIndex >= originalCount + CLONE_COUNT) {
+            moveToSlide(currentIndex - originalCount, false);
+            isTransitioning = false;
+          } else if (currentIndex < CLONE_COUNT) {
+            moveToSlide(currentIndex + originalCount, false);
+            isTransitioning = false;
+          }
+        }
+      }, 700);
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayTimer = setInterval(() => {
+          nextSlide();
+        }, 5500);
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
+      }
+
+      // Arrow controls
+      prevBtn?.addEventListener('click', () => {
+        prevSlide();
+        startAutoPlay();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        nextSlide();
+        startAutoPlay();
+      });
+
+      // Pause on hover
+      if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+        carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+        // Touch swipe support for mobile/tablet
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carouselContainer.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carouselContainer.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          const swipeDistance = touchEndX - touchStartX;
+          if (swipeDistance < -40) {
+            nextSlide();
+            startAutoPlay();
+          } else if (swipeDistance > 40) {
+            prevSlide();
+            startAutoPlay();
+          }
+        }, { passive: true });
+      }
+
+      // Responsive window resize
+      window.addEventListener('resize', () => {
+        moveToSlide(currentIndex, false);
+      });
+      window.addEventListener('load', () => {
+        moveToSlide(currentIndex, false);
+      });
+
+      // Initial position
+      moveToSlide(CLONE_COUNT, false);
+      startAutoPlay();
     }
-
-    // Responsive window resize
-    window.addEventListener('resize', () => {
-      updateCarousel(currentIndex);
-    });
-
-    // Initial setup
-    updateCarousel(0);
-    startAutoPlay();
   }
 
   // 13. "Salas de Eventos" - Pre-select Room Tipology on Form & Smooth Scroll

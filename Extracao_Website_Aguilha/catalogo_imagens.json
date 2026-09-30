@@ -1,0 +1,618 @@
+[
+  {
+    "Categoria": "banners",
+    "Ficheiro": "banner_galeria_slide.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/banners/banner_galeria_slide.jpg",
+    "TamanhoKB": 172.7,
+    "Descricao": "Banner de topo da página de fotos e galeria"
+  },
+  {
+    "Categoria": "banners",
+    "Ficheiro": "banner_promocoes_slide.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/banners/banner_promocoes_slide.jpg",
+    "TamanhoKB": 197.8,
+    "Descricao": "Banner de cabeçalho da página de promoções"
+  },
+  {
+    "Categoria": "banners",
+    "Ficheiro": "banner_quartos_slide.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/banners/banner_quartos_slide.jpg",
+    "TamanhoKB": 192.0,
+    "Descricao": "Banner de cabeçalho da secção de quartos"
+  },
+  {
+    "Categoria": "banners",
+    "Ficheiro": "banner_salas_slide.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/banners/banner_salas_slide.jpg",
+    "TamanhoKB": 95.8,
+    "Descricao": "Banner de cabeçalho da secção de salas de reuniões"
+  },
+  {
+    "Categoria": "banners",
+    "Ficheiro": "banner_servicos_slide.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/banners/banner_servicos_slide.jpg",
+    "TamanhoKB": 166.5,
+    "Descricao": "Banner de cabeçalho da secção de serviços e instalações"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "destaque_83_seminario_torre_aguilha.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/destaque_83_seminario_torre_aguilha.jpg",
+    "TamanhoKB": 0.0,
+    "Descricao": "Foto destacada de fachada e vista geral do seminário"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "destaque_carpa_jardins.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/destaque_carpa_jardins.jpg",
+    "TamanhoKB": 0.0,
+    "Descricao": "Carpa exterior nos jardins para eventos e piqueniques"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "destaque_cruz_seminario.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/destaque_cruz_seminario.jpg",
+    "TamanhoKB": 0.0,
+    "Descricao": "Cruzeiro do Seminário Torre d'Aguilha"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "destaque_promocao_8_desconto.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/destaque_promocao_8_desconto.jpg",
+    "TamanhoKB": 0.0,
+    "Descricao": "Destaque visual da promoção de 8% de desconto"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "destaque_salones.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/destaque_salones.jpg",
+    "TamanhoKB": 0.0,
+    "Descricao": "Destaque dos salões de eventos e conferências"
+  },
+  {
+    "Categoria": "destaques",
+    "Ficheiro": "tpl_boxes_background.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/destaques/tpl_boxes_background.jpg",
+    "TamanhoKB": 25.9,
+    "Descricao": "Elemento gráfico de fundo do template do hotel"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_1.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_1.jpg",
+    "TamanhoKB": 146.6,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_11.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_11.jpg",
+    "TamanhoKB": 132.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_12.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_12.jpg",
+    "TamanhoKB": 71.7,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_13.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_13.jpg",
+    "TamanhoKB": 177.6,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_14.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_14.jpg",
+    "TamanhoKB": 169.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_15.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_15.jpg",
+    "TamanhoKB": 162.9,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_16.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_16.jpg",
+    "TamanhoKB": 143.7,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_17.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_17.jpg",
+    "TamanhoKB": 184.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_18.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_18.jpg",
+    "TamanhoKB": 131.9,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_19.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_19.jpg",
+    "TamanhoKB": 52.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_2.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_2.jpg",
+    "TamanhoKB": 126.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_20.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_20.jpg",
+    "TamanhoKB": 120.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_21.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_21.jpg",
+    "TamanhoKB": 194.5,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_22.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_22.jpg",
+    "TamanhoKB": 127.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_23.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_23.jpg",
+    "TamanhoKB": 56.5,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_25.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_25.jpg",
+    "TamanhoKB": 138.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_28.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_28.jpg",
+    "TamanhoKB": 82.9,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_30.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_30.jpg",
+    "TamanhoKB": 128.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_31.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_31.jpg",
+    "TamanhoKB": 145.7,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_32.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_32.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_33.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_33.jpg",
+    "TamanhoKB": 156.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_34.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_34.jpg",
+    "TamanhoKB": 109.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_35.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_35.jpg",
+    "TamanhoKB": 194.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_36.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_36.jpg",
+    "TamanhoKB": 175.6,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_38.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_38.jpg",
+    "TamanhoKB": 159.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_39.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_39.jpg",
+    "TamanhoKB": 192.7,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_4.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_4.jpg",
+    "TamanhoKB": 179.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_40.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_40.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_41.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_41.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_42.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_42.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_43.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_43.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_44.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_44.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_45.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_45.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_46.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_46.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_47.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_47.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_48.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_48.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_49.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_49.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_50.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_50.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_55.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_55.jpg",
+    "TamanhoKB": 71.7,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_56.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_56.jpg",
+    "TamanhoKB": 183.5,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_57.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_57.jpg",
+    "TamanhoKB": 183.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_58.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_58.jpg",
+    "TamanhoKB": 193.5,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_59.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_59.jpg",
+    "TamanhoKB": 199.9,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_6.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_6.jpg",
+    "TamanhoKB": 111.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_60.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_60.jpg",
+    "TamanhoKB": 179.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_61.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_61.jpg",
+    "TamanhoKB": 181.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_62.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_62.jpg",
+    "TamanhoKB": 190.2,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_63.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_63.jpg",
+    "TamanhoKB": 187.2,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_64.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_64.jpg",
+    "TamanhoKB": 197.2,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_65.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_65.jpg",
+    "TamanhoKB": 195.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_66.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_66.jpg",
+    "TamanhoKB": 185.3,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_67.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_67.jpg",
+    "TamanhoKB": 159.5,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_68.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_68.jpg",
+    "TamanhoKB": 182.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_69.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_69.jpg",
+    "TamanhoKB": 170.4,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_7.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_7.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_70.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_70.jpg",
+    "TamanhoKB": 189.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_71.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_71.jpg",
+    "TamanhoKB": 150.8,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_8.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_8.jpg",
+    "TamanhoKB": 74.0,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "galeria",
+    "Ficheiro": "foto_hotel_media_9.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/galeria/foto_hotel_media_9.jpg",
+    "TamanhoKB": 92.9,
+    "Descricao": "Fotografia de alta resolução da galeria do hotel (quartos, exteriores, igreja, jardins ou salas)"
+  },
+  {
+    "Categoria": "logos",
+    "Ficheiro": "logo_hotel_aguilha.png",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/logos/logo_hotel_aguilha.png",
+    "TamanhoKB": 24.3,
+    "Descricao": "Logótipo oficial do Hotel Seminário Torre d'Aguilha"
+  },
+  {
+    "Categoria": "logos",
+    "Ficheiro": "logo_keytel.png",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/logos/logo_keytel.png",
+    "TamanhoKB": 17.6,
+    "Descricao": "Logótipo do parceiro de gestão Keytel Hotels"
+  },
+  {
+    "Categoria": "quartos",
+    "Ficheiro": "quarto_foto_67_media_67.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/quartos/quarto_foto_67_media_67.jpg",
+    "TamanhoKB": 159.5,
+    "Descricao": "Fotografia de detalhe do alojamento e quartos"
+  },
+  {
+    "Categoria": "quartos",
+    "Ficheiro": "quarto_foto_68_media_68.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/quartos/quarto_foto_68_media_68.jpg",
+    "TamanhoKB": 182.4,
+    "Descricao": "Fotografia de detalhe do alojamento e quartos"
+  },
+  {
+    "Categoria": "quartos",
+    "Ficheiro": "quarto_foto_69_media_69.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/quartos/quarto_foto_69_media_69.jpg",
+    "TamanhoKB": 170.4,
+    "Descricao": "Fotografia de detalhe do alojamento e quartos"
+  },
+  {
+    "Categoria": "quartos",
+    "Ficheiro": "quarto_foto_70_media_70.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/quartos/quarto_foto_70_media_70.jpg",
+    "TamanhoKB": 189.8,
+    "Descricao": "Fotografia de detalhe do alojamento e quartos"
+  },
+  {
+    "Categoria": "quartos",
+    "Ficheiro": "quarto_foto_71_media_71.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/quartos/quarto_foto_71_media_71.jpg",
+    "TamanhoKB": 150.8,
+    "Descricao": "Fotografia de detalhe do alojamento e quartos"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SE1_media_45.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SE1_media_45.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia da Sala de Reunião SE1 (45 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SE2_media_44.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SE2_media_44.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia da Sala de Reunião SE2 (80 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SE3_media_40.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SE3_media_40.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia da Sala de Reunião SE3 (15 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SE4_media_41.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SE4_media_41.jpg",
+    "TamanhoKB": 110.0,
+    "Descricao": "Fotografia da Sala de Reunião SE4 (17 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN1_media_50.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN1_media_50.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SN1 (15 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN2_media_42.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN2_media_42.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SN2 (27 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN3_media_43.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN3_media_43.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SN3 (45 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN4_media_46.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN4_media_46.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SN4 (80 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN5_media_47.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN5_media_47.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SN5 (125 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SN7_media_49.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SN7_media_49.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia do Grande Auditório SN7 (225 m²)"
+  },
+  {
+    "Categoria": "salas",
+    "Ficheiro": "sala_SS1_media_48.jpg",
+    "CaminhoRelativo": "C:/Users/niela/OneDrive/Desktop/Hotel Seminário Torre d’Aguilha/Extracao_Website_Aguilha/imagens/salas/sala_SS1_media_48.jpg",
+    "TamanhoKB": 110.1,
+    "Descricao": "Fotografia da Sala de Reunião SS1 (15 m²)"
+  }
+]

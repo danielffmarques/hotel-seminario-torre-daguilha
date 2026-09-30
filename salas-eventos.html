@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salas de Eventos | Hotel Seminário Torre d’Aguilha — Cascais</title>
+  <meta name="description" content="Salas de reuniões, auditórios e retiros no Seminário Torre d’Aguilha, Cascais. Mais de 10 salas versáteis com capacidade de 10 a 350 pessoas. Consulte capacidades e tarifas.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#173A46',
+              dark: '#0F242C',
+              light: '#214E5D',
+            },
+            secondary: {
+              DEFAULT: '#547985',
+              dark: '#43626C',
+              light: '#7094A0',
+            },
+            accent: {
+              DEFAULT: '#C5A880',
+              dark: '#A88B63',
+              light: '#CB856E',
+            },
+            terracotta: {
+              DEFAULT: '#C5A880',
+              dark: '#A88B63',
+              light: '#CB856E',
+            },
+            sand: {
+              DEFAULT: '#E9E1D2',
+              warm: '#E9E1D2',
+              50: '#FAF9F6',
+              100: '#F4EFE6',
+              200: '#E9E1D2',
+              300: '#D5C7B0',
+            },
+            charcoal: '#242A2C',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/images/logos/logo_hotel_aguilha.png" type="image/png">
+</head>
+<body class="bg-[#FAF9F6] text-[#242A2C] antialiased flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="bg-[#0F242C] text-white text-xs md:text-sm py-2 px-4 border-b border-[#547985]/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="bg-[#C5A880] text-[#0F242C] font-semibold px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Eventos & Congressos</span>
+        <span>Auditórios e salas de formação equipadas com estacionamento gratuito no recinto.</span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-300">
+        <a href="tel:+351214458440" class="hover:text-white transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-[#C5A880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +351 214 458 440
+        </a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:acolhimento.sta@espiritanos.pt" class="hover:text-white transition">acolhimento.sta@espiritanos.pt</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logos/logo_hotel_aguilha.png" alt="Hotel Seminário Torre d’Aguilha" class="h-12 w-auto object-contain">
+        <div class="hidden sm:block">
+          <span class="block font-serif text-lg text-[#173A46] font-bold tracking-tight uppercase">Torre d’Aguilha</span>
+          <span class="block text-[11px] uppercase tracking-widest text-[#547985] -mt-1 font-semibold">Hotel & Seminário</span>
+        </div>
+      </a>
+
+      <!-- Grupo da Direita: As 4 Páginas + Idioma + Botão Orçamento -->
+      <div class="hidden lg:flex items-center gap-6 xl:gap-8 ml-auto">
+        <!-- Menu Desktop (As 4 Páginas ao lado do idioma) -->
+        <nav class="flex items-center gap-6 xl:gap-8 text-sm font-medium text-gray-700">
+          <a href="quartos.html" class="nav-link hover:text-[#173A46]">Quartos</a>
+          <a href="salas-eventos.html" class="nav-link active text-[#173A46] font-semibold">Salas de Eventos</a>
+          <a href="sobre-servicos.html" class="nav-link hover:text-[#173A46]">O Seminário & Serviços</a>
+          <a href="faqs.html" class="nav-link hover:text-[#173A46]">FAQs</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <!-- Seletor de Idioma (PT, EN, ES, FR) -->
+          <div class="relative lang-selector-dropdown">
+            <button type="button" class="lang-selector-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-gray-700 hover:text-[#173A46] border border-gray-200 hover:border-[#C5A880] bg-white transition shadow-xs focus:outline-none" aria-haspopup="true" aria-expanded="false" title="Selecionar Idioma">
+              <svg class="w-3.5 h-3.5 text-[#A88B63]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a8.959 8.959 0 01-4.5-1.207M12 21a8.959 8.959 0 004.5-1.207m0 0a8.959 8.959 0 01-4.5-1.207m0 0A8.959 8.959 0 003 12m18 0a8.959 8.959 0 01-1.207 4.5M3 12a8.959 8.959 0 011.207-4.5M3 12h18M12 3a8.959 8.959 0 014.5 1.207M12 3a8.959 8.959 0 00-4.5 1.207m0 0A8.959 8.959 0 0112 3" />
+              </svg>
+              <span class="current-lang-label">PT</span>
+              <svg class="w-3 h-3 text-gray-400 transition-transform duration-200 lang-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="lang-dropdown-menu hidden absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-1.5 z-50">
+              <div class="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-gray-400 border-b border-gray-100">
+                Idioma / Language
+              </div>
+              <button type="button" data-lang="PT" data-label="Português" class="lang-option w-full px-3 py-2 text-xs flex items-center justify-between text-[#173A46] font-semibold bg-gray-50 hover:bg-gray-100 transition">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm">🇵🇹</span>
+                  <span>Português</span>
+                </div>
+                <span class="lang-badge text-[10px] font-bold text-[#A88B63] px-1.5 py-0.5 rounded bg-[#C5A880]/15">PT</span>
+              </button>
+              <button type="button" data-lang="EN" data-label="English" class="lang-option w-full px-3 py-2 text-xs flex items-center justify-between text-gray-700 hover:text-[#173A46] hover:bg-gray-50 transition">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm">🇬🇧</span>
+                  <span>English</span>
+                </div>
+                <span class="lang-badge text-[10px] font-bold text-gray-400 px-1.5 py-0.5 rounded bg-gray-100">EN</span>
+              </button>
+              <button type="button" data-lang="ES" data-label="Español" class="lang-option w-full px-3 py-2 text-xs flex items-center justify-between text-gray-700 hover:text-[#173A46] hover:bg-gray-50 transition">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm">🇪🇸</span>
+                  <span>Español</span>
+                </div>
+                <span class="lang-badge text-[10px] font-bold text-gray-400 px-1.5 py-0.5 rounded bg-gray-100">ES</span>
+              </button>
+              <button type="button" data-lang="FR" data-label="Français" class="lang-option w-full px-3 py-2 text-xs flex items-center justify-between text-gray-700 hover:text-[#173A46] hover:bg-gray-50 transition">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm">🇫🇷</span>
+                  <span>Français</span>
+                </div>
+                <span class="lang-badge text-[10px] font-bold text-gray-400 px-1.5 py-0.5 rounded bg-gray-100">FR</span>
+              </button>
+            </div>
+          </div>
+
+          <a href="#pedido-orcamento" class="inline-flex items-center justify-center px-5 py-2.5 rounded text-sm font-semibold tracking-wide text-white bg-[#173A46] hover:bg-[#0F242C] shadow-sm transition">
+            Pedir Orçamento
+          </a>
+        </div>
+      </div>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-gray-900" aria-label="Abrir Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <!-- Seletor de Idioma Mobile -->
+      <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Idioma / Language</span>
+        <div class="flex items-center gap-1.5">
+          <button type="button" data-lang="PT" class="mobile-lang-btn px-2.5 py-1 rounded text-xs font-bold bg-[#173A46] text-white shadow-xs">PT</button>
+          <button type="button" data-lang="EN" class="mobile-lang-btn px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">EN</button>
+          <button type="button" data-lang="ES" class="mobile-lang-btn px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">ES</button>
+          <button type="button" data-lang="FR" class="mobile-lang-btn px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">FR</button>
+        </div>
+      </div>
+      <a href="quartos.html" class="block py-2 text-base font-medium text-gray-700 border-b border-gray-100">Quartos</a>
+      <a href="salas-eventos.html" class="block py-2 text-base font-semibold text-[#173A46] border-b border-gray-100">Salas de Eventos</a>
+      <a href="sobre-servicos.html" class="block py-2 text-base font-medium text-gray-700 border-b border-gray-100">O Seminário & Serviços</a>
+      <a href="faqs.html" class="block py-2 text-base font-medium text-gray-700 border-b border-gray-100">FAQs</a>
+      <div class="pt-2">
+        <a href="#pedido-orcamento" class="block w-full py-3 rounded text-center font-semibold text-white bg-[#173A46] shadow">
+          Pedir Orçamento de Evento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- HERO SECTION -->
+    <section class="relative py-20 bg-gray-900 text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/banners/banner_salas_slide.jpg" alt="Salas de Reuniões e Congressos" class="w-full h-full object-cover filter brightness-[0.35]">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0F242C] via-black/40 to-transparent"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-normal mb-4">
+          Salas de Eventos
+        </h1>
+        <p class="text-gray-200 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          O ambiente perfeito para reflexão, foco de equipa e grandes encontros institucionais. Mais de 10 salas adaptáveis, tradução simultânea e apoio alimentar até 130 comensais.
+        </p>
+      </div>
+    </section>
+
+    <!-- BARRA INTERATIVA DE FILTRO DE SALAS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+      <div class="bg-white rounded-xl shadow-xl border border-gray-200 p-6">
+        <form id="salas-filter-form" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-end">
+          <!-- Filtro por Formato -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Formato da Sala</label>
+            <select id="filter-format" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46] bg-white">
+              <option value="all">Todos os Formatos</option>
+              <option value="plateia">Plateia / Teatro</option>
+              <option value="escola">Formato Escola</option>
+              <option value="u-shape">Forma em U</option>
+            </select>
+          </div>
+
+          <!-- Filtro por Capacidade -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Capacidade Mínima (Pax)</label>
+            <select id="filter-pax" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46] bg-white">
+              <option value="0">Qualquer Capacidade</option>
+              <option value="15">A partir de 15 pax</option>
+              <option value="30">A partir de 30 pax</option>
+              <option value="80">A partir de 80 pax</option>
+              <option value="150">Grandes Grupos (+150 pax)</option>
+            </select>
+          </div>
+
+          <!-- Filtro por Preço Máximo -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-semibold text-gray-700 uppercase tracking-wider">Tarifa Máxima / Dia</label>
+              <span id="price-display-val" class="text-xs font-bold text-[#173A46]">400 €/dia</span>
+            </div>
+            <input id="filter-price" type="range" min="30" max="400" step="10" value="400" class="w-full accent-[#173A46] cursor-pointer">
+          </div>
+
+          <!-- Botão Reset & Contador -->
+          <div class="flex items-center justify-between gap-3">
+            <button id="reset-filters-btn" type="button" class="w-full py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold rounded uppercase tracking-wider transition">
+              Limpar Filtros
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+          <span id="salas-count" class="font-semibold text-[#173A46]">A carregar salas...</span>
+          <span>Estacionamento gratuito para participantes em eventos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE CARTÕES DE SALAS (FILTRÁVEIS) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div id="no-salas-found" class="hidden text-center py-16 bg-white rounded-xl border border-gray-200">
+        <span class="text-4xl mb-2 block">🔍</span>
+        <h3 class="font-serif text-2xl text-[#173A46] font-semibold mb-2">Nenhuma sala corresponde aos critérios selecionados</h3>
+        <p class="text-gray-600 text-sm max-w-md mx-auto mb-4">Tente reduzir o número de participantes ou aumentar a tarifa diária para visualizar opções disponíveis.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1. SALA SN7 (Auditório Principal) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="350" data-min-price="350">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN7_media_49.jpg" alt="Sala SN7 - Auditório Principal" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">225 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN7 (Auditório)</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                O grande auditório do complexo. Equipado com cabines para tradução simultânea, acústica de topo e meios multimédia para conferências de grande dimensão.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>350 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">90 – 350 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>50 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">350 € – 400 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN7" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. SALA SN5 -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="120" data-min-price="180">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN5_media_47.jpg" alt="Sala SN5" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">125 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN5</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Segundo maior espaço do seminário, luminoso e amplo. Perfeito para formações plurais, assembleias setoriais, simpósios e apresentações empresariais.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>120 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">48 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>40 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">180 € – 230 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN5" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. SALA SN4 -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="80" data-min-price="110">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN4_media_46.jpg" alt="Sala SN4" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">80 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN4</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Sala intermédia com 80 m², projetada para conferências médias, seminários temáticos, formações pedagógicas e reuniões dinâmicas.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>80 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">32 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>26 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">110 € – 160 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN4" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. SALA SN3 -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="50" data-min-price="80">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN3_media_43.jpg" alt="Sala SN3" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">45 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN3</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Espaço formativo acolhedor com 45 m² e luz natural. Ideal para seminários técnicos, cursos certificados e sessões interativas até 50 participantes.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>50 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">24 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>20 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">80 € – 110 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN3" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. SALA SN2 -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="20" data-min-price="40">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN2_media_42.jpg" alt="Sala SN2" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">27 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN2</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Sala prática com 27 m² e ambiente resguardado. Recomendada para grupos de trabalho, reuniões de direção ou apoio operacional a grandes conferências.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>20 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">8 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>8 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">40 € – 65 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN2" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. SALA SN1 -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="20" data-min-price="40">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SN1_media_50.jpg" alt="Sala SN1" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">15 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SN1</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Espaço intimista de 15 m² para pequenos comités, recrutamento, entrevistas de admissão, reuniões executivas ou atendimentos de tutoria personalizada.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>20 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">8 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>8 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">40 € – 65 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SN1" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 7. SALA SE2 (Ala Este) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="80" data-min-price="110">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SE2_media_44.jpg" alt="Sala SE2" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">80 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SE2</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Situada na Ala Este com 80 m². Beneficia de excelente luminosidade natural, silêncio circundante e vista desafogada para os jardins do seminário.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>80 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">30 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>24 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">110 € – 160 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SE2" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 8. SALA SE1 (Ala Este) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="40" data-min-price="80">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SE1_media_45.jpg" alt="Sala SE1" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">45 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SE1</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Sala de 45 m² na Ala Este, envolta pela serenidade do convento. Ideal para retiros espirituais, encontros comunitários e formações com elevado foco.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>40 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">18 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>16 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">80 € – 110 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SE1" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 9. SALA SE4 (Ala Este) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="10" data-min-price="30">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SE4_media_41.jpg" alt="Sala SE4" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">17 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SE4</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Espaço recolhido de 17 m² na Ala Este. Adequado para reuniões executivas, secretariado técnico de eventos ou gabinetes de oradores.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>10 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">6 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>6 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">30 € – 55 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SE4" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 10. SALA SE3 (Ala Este) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola,u-shape" data-max-pax="10" data-min-price="30">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SE3_media_40.jpg" alt="Sala SE3" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">15 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SE3</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Ambiente tranquilo com 15 m² na Ala Este. Destinado a atendimentos individuais, pequenos grupos de oração e comissões de coordenação.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>10 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">6 pax</strong></div>
+                <div class="flex justify-between"><span>Forma em U:</span> <strong>6 pax</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">30 € – 55 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SE3" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- 11. SALA SS1 (Piso Inferior) -->
+        <div class="sala-card bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden card-hover flex flex-col justify-between"
+             data-formats="plateia,escola" data-max-pax="20" data-min-price="45">
+          <div>
+            <div class="relative h-52">
+              <img src="assets/images/salas/sala_SS1_media_48.jpg" alt="Sala SS1" class="w-full h-full object-cover">
+              <span class="absolute bottom-3 right-3 bg-white/95 text-[#173A46] text-xs font-bold px-2.5 py-1 rounded shadow">15 m²</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl text-[#173A46] font-bold mb-2">Sala SS1</h3>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Sala funcional de 15 m² no piso inferior. Excelente isolamento acústico para momentos de oração, ensaios vocais ou trabalho de bastidores.
+              </p>
+              <div class="space-y-1.5 text-xs text-gray-700 bg-[#FAF9F6] p-3 rounded border border-gray-100 mb-4">
+                <div class="flex justify-between"><span>Formato Escola:</span> <strong>20 pax</strong></div>
+                <div class="flex justify-between"><span>Teatro / Plateia:</span> <strong class="text-gray-900">15 pax</strong></div>
+                <div class="flex justify-between"><span>Isolamento Acústico:</span> <strong>Total</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-gray-100 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase text-gray-500 block">Tarifa Oficial</span>
+              <span class="text-base font-bold text-[#173A46]">45 € / dia</span>
+            </div>
+            <a href="#pedido-orcamento" data-sala="SS1" class="btn-reservar-sala px-3.5 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FORMULÁRIO DE PEDIDO DE ORÇAMENTO DE EVENTO -->
+    <section id="pedido-orcamento" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 scroll-mt-24">
+      <div class="bg-white rounded-2xl border border-gray-200 p-8 sm:p-12 shadow-xl">
+        <div class="text-center mb-10">
+          <h2 class="font-serif text-3xl sm:text-4xl text-[#173A46] font-bold mb-2">Solicitar Orçamento de Sala ou Evento</h2>
+          <p class="text-gray-600 text-sm max-w-xl mx-auto">
+            Indique os detalhes do seu encontro. A equipa de acolhimento dos Padres Espiritanos responderá com uma proposta sob medida no prazo de 24 horas úteis.
+          </p>
+        </div>
+
+        <form class="question-form space-y-6">
+          <!-- Nome do Responsável & Instituição -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Nome do Responsável *</label>
+              <input type="text" required placeholder="ex. Dr. António Silva" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Instituição</label>
+              <input type="text" placeholder="ex. Fundação, Empresa ou Associação" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+          </div>
+
+          <!-- Email & Telefone / Telemóvel -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Email de Contacto *</label>
+              <input type="email" required placeholder="ex. contacto@instituicao.pt" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Telefone / Telemóvel *</label>
+              <input type="tel" required placeholder="+351 9xx xxx xxx" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+          </div>
+
+          <!-- Datas & Nº de Pessoas -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Data de Início *</label>
+              <input type="date" required class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Data de Fim</label>
+              <input type="date" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Nº Estimado de Pessoas *</label>
+              <input type="number" min="1" max="500" required placeholder="ex. 45" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]">
+            </div>
+          </div>
+
+          <!-- Sala de Preferência -->
+          <div>
+            <label for="select-sala-preferencia" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Sala de Preferência</label>
+            <select id="select-sala-preferencia" class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46] bg-white transition-all duration-300">
+              <option value="SN7">Sala SN7 — Grande Auditório (225 m² | até 350 pax)</option>
+              <option value="SN5">Sala SN5 — Auditório Médio (125 m² | até 120 pax)</option>
+              <option value="SN4">Sala SN4 — Seminários (80 m² | até 80 pax)</option>
+              <option value="SN3">Sala SN3 — Formação (45 m² | até 50 pax)</option>
+              <option value="SN2">Sala SN2 — Reunião (27 m² | até 20 pax)</option>
+              <option value="SN1">Sala SN1 — Apoio (15 m² | até 20 pax)</option>
+              <option value="SE2">Sala SE2 — Ala Este (80 m² | até 80 pax)</option>
+              <option value="SE1">Sala SE1 — Ala Este (45 m² | até 40 pax)</option>
+              <option value="SE4">Sala SE4 — Ala Este (17 m² | até 10 pax)</option>
+              <option value="SE3">Sala SE3 — Ala Este (15 m² | até 10 pax)</option>
+              <option value="SS1">Sala SS1 — Piso Inferior (15 m² | até 20 pax)</option>
+            </select>
+          </div>
+
+          <!-- Serviços Adicionais Necessários (Escolha Múltipla) -->
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider">Serviços Adicionais Necessários</label>
+              <span class="text-[11px] text-gray-500 font-normal">Pode escolher vários</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="apenas_sala" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Apenas Aluguer de Sala</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="coffee_break" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Coffee-Break</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="refeicoes" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Almoço / Jantar Buffet</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="alojamento" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Alojamento no Hotel</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="audiovisual" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Multimédia & Som</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-[#173A46] hover:bg-gray-50 cursor-pointer transition select-none bg-[#FAF9F6]">
+                <input type="checkbox" name="servicos_adicionais" value="traducao" class="w-4 h-4 text-[#173A46] rounded border-gray-300 focus:ring-[#173A46] accent-[#173A46]">
+                <span class="text-xs font-medium text-gray-800">Tradução Simultânea</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Mensagem ou Requisitos Especiais -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Mensagem ou Requisitos Especiais</label>
+            <textarea rows="4" placeholder="Descreva o formato pretendido (escola, plateia, u-shape), necessidades multimédia ou horários específicos..." class="w-full text-sm border border-gray-300 rounded px-3 py-2.5 outline-none focus:ring-2 focus:ring-[#173A46]"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-lg transition">
+            Enviar Pedido de Orçamento
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-[#0F242C] text-gray-300 pt-16 pb-12 border-t border-[#547985]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 pb-12 border-b border-white/10 items-start">
+        <!-- Coluna 1: Identidade & Contactos -->
+        <div class="space-y-4 flex flex-col items-start text-left max-w-sm w-full mx-auto">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logos/logo_hotel_aguilha.png" alt="Hotel Seminário Torre d’Aguilha" class="h-10 w-auto brightness-200">
+            <div class="text-left">
+              <span class="block font-serif text-lg text-white font-bold tracking-tight uppercase">Torre d’Aguilha</span>
+              <span class="block text-[10px] uppercase tracking-widest text-[#C5A880]">Hotel & Seminário</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed text-left">
+            Tutela da Congregação dos Missionários do Espírito Santo. O centro de congressos de referência em São Domingos de Rana, Cascais.
+          </p>
+          <div class="text-xs space-y-1.5 pt-2 text-left">
+            <p><strong class="text-white">Telefone:</strong> +351 214 458 440</p>
+            <p><strong class="text-white">Email:</strong> acolhimento.sta@espiritanos.pt</p>
+            <p><strong class="text-white">Receção:</strong> 08:00 às 00:00</p>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Explorar -->
+        <div class="flex flex-col items-start text-left max-w-xs w-full mx-auto md:pl-6 lg:pl-10">
+          <h4 class="font-serif text-lg text-white font-medium mb-4 text-left">Explorar</h4>
+          <ul class="space-y-2 text-xs text-left">
+            <li><a href="index.html" class="hover:text-[#C5A880] transition">Início & Apresentação</a></li>
+            <li><a href="quartos.html" class="hover:text-[#C5A880] transition">Quartos</a></li>
+            <li><a href="salas-eventos.html" class="hover:text-[#C5A880] transition">Salas de Eventos</a></li>
+            <li><a href="sobre-servicos.html" class="hover:text-[#C5A880] transition">O Seminário & Serviços</a></li>
+            <li><a href="faqs.html" class="hover:text-[#C5A880] transition">FAQs & Apoio</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Localização & Mapa -->
+        <div class="flex flex-col items-start text-left max-w-sm w-full mx-auto">
+          <h4 class="font-serif text-lg text-white font-medium mb-4 text-left">Localização</h4>
+          <p class="text-xs text-gray-400 mb-3 text-left">Quinta da Torre d’Aguilha, 2785 São Domingos de Rana, Portugal</p>
+          <div class="h-28 w-full max-w-[280px] rounded overflow-hidden border border-white/10 mb-2">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.5636531393693!2d-9.336259684654035!3d38.70933607959929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec8fb193d5bf9%3A0xe54e605d5182962e!2sSemin%C3%A1rio%20Torre%20d&#39;Aguilha!5e0!3m2!1spt-PT!2spt!4v1696075000000!5m2!1spt-PT!2spt" 
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa"></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Seminario+Torre+d'Aguilha+Cascais" target="_blank" rel="noopener" class="text-[11px] font-semibold text-[#C5A880] hover:underline text-left">Abrir no Google Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4 text-center">
+        <div>© 2026 Hotel Seminário Torre d’Aguilha. Todos os direitos reservados.</div>
+        <div>Estacionamento privativo para todos os participantes de eventos.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

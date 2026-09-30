@@ -150,9 +150,9 @@
           </div>
 
           <!-- Botão de Reserva Direta -->
-          <button class="open-reservation-modal inline-flex items-center justify-center min-w-[164px] h-10 px-5 py-2.5 rounded text-sm font-semibold tracking-wide text-white bg-[#173A46] hover:bg-[#0F242C] shadow-sm transition whitespace-nowrap">
+          <a href="reserva.html" class="inline-flex items-center justify-center min-w-[164px] h-10 px-5 py-2.5 rounded text-sm font-semibold tracking-wide text-white bg-[#173A46] hover:bg-[#0F242C] shadow-sm transition whitespace-nowrap">
             Reservar Quarto
-          </button>
+          </a>
         </div>
       </div>
 
@@ -179,9 +179,9 @@
       <a href="sobre-servicos.html" class="block py-2 text-base font-medium text-gray-700 border-b border-gray-100">O Seminário & Serviços</a>
       <a href="faqs.html" class="block py-2 text-base font-medium text-gray-700 border-b border-gray-100">FAQs</a>
       <div class="pt-2">
-        <button class="open-reservation-modal w-full py-3 rounded text-center font-semibold text-white bg-[#173A46] shadow">
-          Reservar Agora (-8% Direto)
-        </button>
+        <a href="reserva.html" class="block w-full py-3 rounded text-center font-semibold text-white bg-[#173A46] shadow">
+          Reservar Quarto (-8% Direto)
+        </a>
       </div>
     </div>
   </header>
@@ -207,7 +207,7 @@
 
         <!-- 4. MOTOR DE RESERVA DIRETA (BARRA DE PESQUISA) -->
         <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200 p-4 sm:p-6 text-gray-800 text-left">
-          <form class="reservation-form grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+          <form class="reservation-form grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end" action="reserva.html" method="GET">
             <!-- Check-in -->
             <div>
               <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Check-in</label>
@@ -389,9 +389,9 @@
               <a href="quartos.html" class="text-xs font-semibold text-gray-700 hover:text-[#173A46] transition">
                 Saber Mais →
               </a>
-              <button data-room="Quarto Ala Moderna" class="open-reservation-modal px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
+              <a href="reserva.html?room=Quarto Ala Moderna" class="px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
                 Reservar Quarto
-              </button>
+              </a>
             </div>
           </div>
 
@@ -426,9 +426,9 @@
               <a href="quartos.html" class="text-xs font-semibold text-gray-700 hover:text-[#173A46] transition">
                 Saber Mais →
               </a>
-              <button data-room="Quarto Ala Clássica" class="open-reservation-modal px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
+              <a href="reserva.html?room=Quarto Ala Clássica" class="px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
                 Reservar Quarto
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -627,9 +627,9 @@
           Beneficie do menor preço garantido com o código promocional <strong class="text-[#E9E1D2] font-mono">DIRETO8</strong>, estacionamento privativo gratuito e atendimento personalizado da nossa equipa.
         </p>
         <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button class="open-reservation-modal w-full sm:w-auto px-8 py-4 bg-[#C5A880] hover:bg-[#B39366] text-[#0F242C] font-bold text-sm rounded-lg shadow-lg transition">
+          <a href="reserva.html" class="w-full sm:w-auto px-8 py-4 bg-[#C5A880] hover:bg-[#B39366] text-[#0F242C] font-bold text-sm rounded-lg shadow-lg transition text-center">
             Reservar Quarto (-8% Direto)
-          </button>
+          </a>
           <a href="quartos.html" class="w-full sm:w-auto px-6 py-4 border border-white/20 hover:border-white text-white font-medium text-sm rounded-lg transition">
             Explorar Tipologias de Quartos
           </a>
@@ -711,74 +711,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- 12. MODAL DE RESERVA RÁPIDA (RESERVATION POPUP) -->
-  <div id="reservation-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-gray-200">
-      <button id="close-reservation-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl font-light leading-none focus:outline-none">
-        &times;
-      </button>
-
-      <div class="mb-6">
-        <span class="bg-[#173A46]/10 text-[#173A46] text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
-          Reserva Direta Oficial
-        </span>
-        <h3 class="font-serif text-2xl text-[#173A46] font-bold mt-2">Garantir Quarto ou Espaço</h3>
-        <p class="text-xs text-gray-600 mt-1">
-          Aproveite 8% de desconto direto. Sem taxas de reserva ou intermediários.
-        </p>
-      </div>
-
-      <form class="reservation-form space-y-4">
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Check-in</label>
-            <input type="date" name="checkin" required class="w-full text-sm border border-gray-300 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-[#173A46]">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Check-out</label>
-            <input type="date" name="checkout" required class="w-full text-sm border border-gray-300 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-[#173A46]">
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Acomodação Desejada</label>
-          <select name="room_type" class="w-full text-sm border border-gray-300 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-[#173A46] bg-white">
-            <option value="Quarto Ala Moderna">Quarto Duplo Ala Moderna (AC / Secretária)</option>
-            <option value="Quarto Ala Clássica">Quarto Ala Clássica (Silêncio / Vista Jardins)</option>
-            <option value="Auditório SN7 (350 pax)">Auditório SN7 (350 pax)</option>
-            <option value="Sala de Reunião / Formação">Sala de Reunião / Formação</option>
-            <option value="Retiro / Espaço Religioso">Retiro / Grupo Religioso</option>
-          </select>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Nº Hóspedes</label>
-            <select name="guests" class="w-full text-sm border border-gray-300 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-[#173A46] bg-white">
-              <option value="1">1 Hóspede</option>
-              <option value="2" selected>2 Hóspedes</option>
-              <option value="3">3 Hóspedes</option>
-              <option value="4+">Grupo (+4 Pessoas)</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Código Promo</label>
-            <input type="text" name="promo" value="DIRETO8" class="w-full text-sm font-bold text-[#173A46] border border-[#C5A880] bg-[#FAF9F6] rounded px-3 py-2 outline-none uppercase">
-          </div>
-        </div>
-
-        <button type="submit" class="w-full py-3 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-lg transition mt-2">
-          Verificar Disponibilidade & Reservar
-        </button>
-      </form>
-
-      <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
-        <span>Receção: 08:00 às 00:00</span>
-        <a href="tel:+351214458440" class="text-[#173A46] font-bold hover:underline">+351 214 458 440</a>
-      </div>
-    </div>
-  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

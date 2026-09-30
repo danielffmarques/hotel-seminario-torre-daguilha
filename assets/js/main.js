@@ -37,57 +37,37 @@ document.addEventListener('DOMContentLoaded', () => {
     input.min = formatDate(tomorrow);
   });
 
-  // 4. Reservation Modal Logic
-  const reservationModal = document.getElementById('reservation-modal');
+  // 4. Redirecionamento de CTAs de Reserva para a nova página reserva.html
   const openReservationBtns = document.querySelectorAll('.open-reservation-modal');
-  const closeReservationBtn = document.getElementById('close-reservation-modal');
-
   openReservationBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      // If button has specific room preference, select it in the modal
       const preselectedRoom = btn.getAttribute('data-room');
-      if (preselectedRoom && reservationModal) {
-        const roomSelect = reservationModal.querySelector('select[name="room_type"]');
-        if (roomSelect) roomSelect.value = preselectedRoom;
+      if (preselectedRoom) {
+        window.location.href = `reserva.html?room=${encodeURIComponent(preselectedRoom)}`;
+      } else {
+        window.location.href = 'reserva.html';
       }
-      reservationModal?.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
     });
   });
 
-  if (closeReservationBtn && reservationModal) {
-    closeReservationBtn.addEventListener('click', () => {
-      reservationModal.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-    });
-
-    reservationModal.addEventListener('click', (e) => {
-      if (e.target === reservationModal) {
-        reservationModal.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      }
-    });
-  }
-
-  // 5. Reservation Form Submit Handler
+  // 5. Redirecionamento da barra de pesquisa do Hero para reserva.html com parâmetros
   const reservationForms = document.querySelectorAll('.reservation-form');
   reservationForms.forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const checkin = form.querySelector('[name="checkin"]')?.value || 'data selecionada';
-      const checkout = form.querySelector('[name="checkout"]')?.value || 'data selecionada';
-      const guests = form.querySelector('[name="guests"]')?.value || '2';
-      const roomType = form.querySelector('[name="room_type"]')?.value || 'Alojamento Geral';
+      const checkin = form.querySelector('[name="checkin"]')?.value || '';
+      const checkout = form.querySelector('[name="checkout"]')?.value || '';
+      const roomType = form.querySelector('[name="room_type"]')?.value || '';
       const promo = form.querySelector('[name="promo"]')?.value || 'DIRETO8';
 
-      let msg = `Obrigado pelo seu pedido de reserva!\n\nDetalhes solicitados:\n• Tipologia: ${roomType}\n• Período: ${checkin} a ${checkout}\n• Hóspedes: ${guests}\n• Código Promocional: ${promo} (8% Desconto Aplicado)\n\nA nossa receção entrará em contacto para confirmação de disponibilidade.\nPode também confirmar de imediato através do telefone: +351 214 458 440 (08:00 - 00:00) ou email: acolhimento.sta@espiritanos.pt.`;
-      
-      alert(msg);
-      if (reservationModal) {
-        reservationModal.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      }
+      const params = new URLSearchParams();
+      if (checkin) params.set('checkin', checkin);
+      if (checkout) params.set('checkout', checkout);
+      if (roomType) params.set('room', roomType);
+      if (promo) params.set('promo', promo);
+
+      window.location.href = `reserva.html?${params.toString()}`;
     });
   });
 

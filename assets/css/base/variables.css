@@ -1,0 +1,35 @@
+/* =========================================================
+   HOTEL SEMINÁRIO TORRE D'AGUILHA - BASE VARIABLES
+   Design Tokens & Variáveis Globais de Cor e Tipografia
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta Oficial do Hotel Seminário Torre d'Aguilha */
+  --color-primary: #173A46;        /* Azul Atlântico profundo (Principal) */
+  --color-primary-dark: #0F242C;   /* Azul Noite / Rodapé / Sombras profundas */
+  --color-primary-light: #214E5D;  /* Azul Atlântico Médio */
+  --color-secondary: #547985;      /* Azul mineral / Subtítulos */
+  --color-secondary-light: #7094A0;/* Azul mineral suave */
+  --color-sand: #FAF9F6;           /* Branco quente (Fundo de página) */
+  --color-sand-warm: #E9E1D2;      /* Areia quente (Acentos e contrastes suaves) */
+  --color-sand-100: #F4EFE6;       /* Areia suave (Secções alternadas) */
+  --color-accent: #C5A880;         /* Dourado Nobre Oficial (CTAs & Destaques) */
+  --color-accent-dark: #A88B63;    /* Dourado Nobre Hover */
+  --color-charcoal: #242A2C;       /* Carvão (Tipografia de leitura) */
+  --color-muted: #547985;          /* Texto secundário */
+  --color-border: rgba(23, 58, 70, 0.12);
+  --color-border-light: rgba(255, 255, 255, 0.15);
+
+  /* Tipografia Oficial */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Efeitos e Transições */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s ease-out;
+  --shadow-subtle: 0 4px 20px rgba(15, 36, 44, 0.06);
+  --shadow-card: 0 10px 30px -5px rgba(23, 58, 70, 0.08);
+}

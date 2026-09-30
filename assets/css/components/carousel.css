@@ -1,0 +1,19 @@
+/* =========================================================
+   HOTEL SEMINÁRIO TORRE D'AGUILHA - CAROUSEL
+   Transições de Slides, Pistas Infinitas e Controlos
+   ========================================================= */
+
+/* Transição de Fade para Slides */
+.carousel-slide {
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Indicadores de Ponto (Dots) */
+.carousel-dot {
+  transition: width var(--transition-normal), background-color var(--transition-normal);
+}
+
+/* Pista de Deslizamento */
+.carousel-track-smooth {
+  will-change: transform;
+}

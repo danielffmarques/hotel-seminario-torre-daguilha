@@ -1,0 +1,39 @@
+/* =========================================================
+   HOTEL SEMINÁRIO TORRE D'AGUILHA - BOOKING PAGE STYLES
+   Estilos Dedicados ao Fluxo de Reserva Sequencial em 4 Passos
+   ========================================================= */
+
+/* Indicador de Progresso (Stepper) */
+.step-indicator {
+  transition: color var(--transition-normal);
+}
+
+.step-indicator .step-circle {
+  transition: all var(--transition-normal);
+}
+
+/* Secções de Passos */
+.booking-step-section {
+  animation: fadeInStep 0.35s ease-out;
+}
+
+@keyframes fadeInStep {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cartões Selecionáveis de Tipologia de Quarto */
+.room-choice-card {
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Opções de Método de Pagamento */
+.payment-method-option {
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}

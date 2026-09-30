@@ -1,0 +1,47 @@
+/* =========================================================
+   HOTEL SEMINÁRIO TORRE D'AGUILHA - NAVBAR & HEADER
+   Navegação Principal, Efeito Underline e Seletor de Idiomas
+   ========================================================= */
+
+/* Efeito de Sublinhado Animado nos Links da Navegação */
+.nav-link {
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Transições do Cabeçalho Sticky */
+header.sticky {
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), padding var(--transition-fast);
+}
+
+/* Dropdown de Idiomas */
+.lang-dropdown-menu {
+  animation: fadeInDown 0.15s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

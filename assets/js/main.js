@@ -76,12 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const checkin = form.querySelector('[name="checkin"]')?.value || '';
         const checkout = form.querySelector('[name="checkout"]')?.value || '';
+        const guests = form.querySelector('[name="guests"]')?.value || '';
         const roomType = form.querySelector('[name="room_type"]')?.value || '';
-        const promo = form.querySelector('[name="promo"]')?.value || 'DIRETO8';
+        const promo = form.querySelector('[name="promo"]')?.value || '';
 
         const params = new URLSearchParams();
         if (checkin) params.set('checkin', checkin);
         if (checkout) params.set('checkout', checkout);
+        if (guests) params.set('adults', guests);
         if (roomType) params.set('room', roomType);
         if (promo) params.set('promo', promo);
 
@@ -714,8 +716,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const paramCheckin = urlParams.get('checkin');
     const paramCheckout = urlParams.get('checkout');
 
+    const paramAdults = urlParams.get('adults') || urlParams.get('guests');
+
     if (paramCheckin && inCheckin) inCheckin.value = paramCheckin;
     if (paramCheckout && inCheckout) inCheckout.value = paramCheckout;
+    if (paramAdults) {
+      const selectAdults = document.getElementById('booking-adults');
+      if (selectAdults) {
+        selectAdults.value = paramAdults;
+        selectAdults.dispatchEvent(new Event('change'));
+      }
+    }
 
     if (paramRoom) {
       roomRadios.forEach(radio => {

@@ -61,12 +61,14 @@ export function initNavigation() {
       e.preventDefault();
       const checkin = form.querySelector('[name="checkin"]')?.value || '';
       const checkout = form.querySelector('[name="checkout"]')?.value || '';
+      const guests = form.querySelector('[name="guests"]')?.value || '';
       const roomType = form.querySelector('[name="room_type"]')?.value || '';
-      const promo = form.querySelector('[name="promo"]')?.value || 'DIRETO8';
+      const promo = form.querySelector('[name="promo"]')?.value || '';
 
       const params = new URLSearchParams();
       if (checkin) params.set('checkin', checkin);
       if (checkout) params.set('checkout', checkout);
+      if (guests) params.set('adults', guests);
       if (roomType) params.set('room', roomType);
       if (promo) params.set('promo', promo);
 

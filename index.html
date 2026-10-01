@@ -164,8 +164,8 @@
         </p>
 
         <!-- 4. MOTOR DE RESERVA DIRETA (BARRA DE PESQUISA) -->
-        <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200 p-4 sm:p-6 text-gray-800 text-left">
-          <form class="reservation-form grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end" action="reserva.html" method="GET">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200 p-4 sm:p-6 text-gray-800 text-left">
+          <form class="reservation-form grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end" action="reserva.html" method="GET">
             <!-- Check-in -->
             <div>
               <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Check-in</label>
@@ -178,20 +178,15 @@
               <input type="date" name="checkout" required class="w-full text-sm border border-gray-300 rounded-md px-3 py-2.5 focus:ring-2 focus:ring-[#173A46] focus:border-transparent outline-none">
             </div>
 
-            <!-- Tipologia -->
+            <!-- Nº de Pessoas -->
             <div>
-              <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Tipologia</label>
-              <select name="room_type" class="w-full text-sm border border-gray-300 rounded-md px-3 py-2.5 focus:ring-2 focus:ring-[#173A46] outline-none bg-white">
-                <option value="Quarto Ala Moderna">Quarto Ala Moderna</option>
-                <option value="Quarto Ala Clássica">Quarto Ala Clássica</option>
-                <option value="Salas / Congressos">Salas & Congressos</option>
+              <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Nº de Pessoas</label>
+              <select name="guests" class="w-full text-sm border border-gray-300 rounded-md px-3 py-2.5 focus:ring-2 focus:ring-[#173A46] outline-none bg-white">
+                <option value="1">1 Pessoa</option>
+                <option value="2" selected>2 Pessoas</option>
+                <option value="3">3 Pessoas</option>
+                <option value="4">4 Pessoas</option>
               </select>
-            </div>
-
-            <!-- Código Promocional -->
-            <div>
-              <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Código Promo</label>
-              <input type="text" name="promo" value="DIRETO8" placeholder="Ex: DIRETO8" class="w-full text-sm font-semibold text-[#173A46] border border-[#C5A880] bg-[#FAF9F6] rounded-md px-3 py-2.5 uppercase outline-none">
             </div>
 
             <!-- Botão de Pesquisa -->

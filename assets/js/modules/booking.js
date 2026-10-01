@@ -60,8 +60,17 @@ export function initBookingEngine() {
   const paramCheckin = urlParams.get('checkin');
   const paramCheckout = urlParams.get('checkout');
 
+  const paramAdults = urlParams.get('adults') || urlParams.get('guests');
+
   if (paramCheckin && inCheckin) inCheckin.value = paramCheckin;
   if (paramCheckout && inCheckout) inCheckout.value = paramCheckout;
+  if (paramAdults) {
+    const selectAdults = document.getElementById('booking-adults');
+    if (selectAdults) {
+      selectAdults.value = paramAdults;
+      selectAdults.dispatchEvent(new Event('change'));
+    }
+  }
 
   if (paramRoom) {
     roomRadios.forEach(radio => {

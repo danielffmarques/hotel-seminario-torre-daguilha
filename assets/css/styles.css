@@ -17,3 +17,9 @@
 /* 3. Estilos Específicos de Páginas */
 @import url('pages/booking.css');
 @import url('pages/faqs.css');
+
+/* 4. Hero Section */
+#hero-section {
+  min-height: calc(100vh - 110px);
+  min-height: calc(100dvh - 110px);
+}

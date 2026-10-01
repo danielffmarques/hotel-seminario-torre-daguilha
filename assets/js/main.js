@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const headerThreshold = 80;
         
         if (heroRect.bottom <= headerThreshold) {
-          navReservationBtn.classList.remove('opacity-0', 'invisible', 'pointer-events-none', '-translate-y-1');
-          navReservationBtn.classList.add('opacity-100', 'visible', 'pointer-events-auto', 'translate-y-0');
+          navReservationBtn.classList.remove('is-hidden', 'opacity-0', 'invisible', 'pointer-events-none', '-translate-y-1');
+          navReservationBtn.classList.add('is-visible', 'opacity-100', 'visible', 'pointer-events-auto', 'translate-y-0');
         } else {
-          navReservationBtn.classList.add('opacity-0', 'invisible', 'pointer-events-none', '-translate-y-1');
-          navReservationBtn.classList.remove('opacity-100', 'visible', 'pointer-events-auto', 'translate-y-0');
+          navReservationBtn.classList.add('is-hidden', 'opacity-0', 'invisible', 'pointer-events-none', '-translate-y-1');
+          navReservationBtn.classList.remove('is-visible', 'opacity-100', 'visible', 'pointer-events-auto', 'translate-y-0');
         }
       }
 

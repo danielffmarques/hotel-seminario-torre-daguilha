@@ -209,7 +209,7 @@
     <!-- 5. SELOS DE BENEFÍCIOS DIRETOS -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-1 card-interactive p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
           <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-[#173A46]/10 flex items-center justify-center text-[#173A46]">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
@@ -217,7 +217,7 @@
           <p class="text-xs text-gray-500">Tarifa exclusiva com o código DIRETO8.</p>
         </div>
 
-        <div class="p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-2 card-interactive p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
           <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-[#173A46]/10 flex items-center justify-center text-[#173A46]">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
           </div>
@@ -225,7 +225,7 @@
           <p class="text-xs text-gray-500">Parque privativo fechado dentro da quinta.</p>
         </div>
 
-        <div class="p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-3 card-interactive p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
           <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-[#173A46]/10 flex items-center justify-center text-[#173A46]">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
@@ -233,7 +233,7 @@
           <p class="text-xs text-gray-500">Espaço verde, claustros e arvoredo secular.</p>
         </div>
 
-        <div class="p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-4 card-interactive p-4 rounded-xl bg-white border border-gray-200 shadow-xs hover:border-[#173A46]/30 transition">
           <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-[#173A46]/10 flex items-center justify-center text-[#173A46]">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
           </div>
@@ -285,8 +285,12 @@
 
         <!-- Mosaico Visual Teaser -->
         <div class="lg:col-span-6 grid grid-cols-2 gap-4">
-          <img src="assets/images/galeria/foto_hotel_media_1.jpg" alt="Fachada da Quinta da Torre d’Aguilha" class="rounded-xl shadow-md h-60 sm:h-72 w-full object-cover">
-          <img src="assets/images/galeria/foto_hotel_media_4.jpg" alt="Claustros e Jardins do Seminário" class="rounded-xl shadow-md h-60 sm:h-72 w-full object-cover mt-6 sm:mt-8">
+          <div class="img-zoom-container card-interactive rounded-xl shadow-md h-60 sm:h-72 overflow-hidden">
+            <img src="assets/images/galeria/foto_hotel_media_1.jpg" alt="Fachada da Quinta da Torre d’Aguilha" class="w-full h-full object-cover img-zoom-target">
+          </div>
+          <div class="img-zoom-container card-interactive rounded-xl shadow-md h-60 sm:h-72 overflow-hidden mt-6 sm:mt-8">
+            <img src="assets/images/galeria/foto_hotel_media_4.jpg" alt="Claustros e Jardins do Seminário" class="w-full h-full object-cover img-zoom-target">
+          </div>
         </div>
       </div>
     </section>
@@ -313,10 +317,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Card Teaser Ala Moderna -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:border-[#173A46]/30 transition flex flex-col justify-between">
+          <div class="scroll-reveal reveal-stagger-1 card-interactive bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:border-[#173A46]/30 transition flex flex-col justify-between">
             <div>
-              <div class="relative h-60 overflow-hidden">
-                <img src="assets/images/quartos/quarto_foto_67_media_67.jpg" alt="Quarto Ala Moderna" class="w-full h-full object-cover">
+              <div class="relative h-60 overflow-hidden img-zoom-container">
+                <img src="assets/images/quartos/quarto_foto_67_media_67.jpg" alt="Quarto Ala Moderna" class="w-full h-full object-cover img-zoom-target">
                 <span class="absolute top-3 left-3 bg-[#173A46] text-white text-[11px] font-semibold px-2.5 py-1 rounded">
                   Ala Moderna
                 </span>
@@ -343,17 +347,17 @@
               <a href="quartos.html" class="text-xs font-semibold text-gray-700 hover:text-[#173A46] transition">
                 Saber Mais →
               </a>
-              <a href="reserva.html?room=Quarto Ala Moderna" class="px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
+              <a href="reserva.html?room=Quarto Ala Moderna" class="btn-cta-sheen px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
                 Reservar Quarto
               </a>
             </div>
           </div>
 
           <!-- Card Teaser Ala Clássica -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:border-[#173A46]/30 transition flex flex-col justify-between">
+          <div class="scroll-reveal reveal-stagger-2 card-interactive bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:border-[#173A46]/30 transition flex flex-col justify-between">
             <div>
-              <div class="relative h-60 overflow-hidden">
-                <img src="assets/images/quartos/quarto_foto_71_media_71.jpg" alt="Quarto Ala Clássica" class="w-full h-full object-cover">
+              <div class="relative h-60 overflow-hidden img-zoom-container">
+                <img src="assets/images/quartos/quarto_foto_71_media_71.jpg" alt="Quarto Ala Clássica" class="w-full h-full object-cover img-zoom-target">
                 <span class="absolute top-3 left-3 bg-[#173A46] text-white text-[11px] font-semibold px-2.5 py-1 rounded">
                   Ala Clássica
                 </span>
@@ -380,7 +384,7 @@
               <a href="quartos.html" class="text-xs font-semibold text-gray-700 hover:text-[#173A46] transition">
                 Saber Mais →
               </a>
-              <a href="reserva.html?room=Quarto Ala Clássica" class="px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
+              <a href="reserva.html?room=Quarto Ala Clássica" class="btn-cta-sheen px-4 py-2 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs font-semibold rounded shadow transition">
                 Reservar Quarto
               </a>
             </div>
@@ -409,10 +413,10 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Card 1: Grandes Auditórios -->
-        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
+        <div class="scroll-reveal reveal-stagger-1 card-interactive bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
           <div>
-            <div class="h-48 overflow-hidden">
-              <img src="assets/images/salas/sala_SN7_media_49.jpg" alt="Grande Auditório SN7" class="w-full h-full object-cover">
+            <div class="h-48 overflow-hidden img-zoom-container">
+              <img src="assets/images/salas/sala_SN7_media_49.jpg" alt="Grande Auditório SN7" class="w-full h-full object-cover img-zoom-target">
             </div>
             <div class="p-5">
               <span class="text-[10px] font-bold uppercase tracking-wider text-[#547985] block mb-1">Capacidade até 350 pax</span>
@@ -430,10 +434,10 @@
         </div>
 
         <!-- Card 2: Salas de Formação -->
-        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
+        <div class="scroll-reveal reveal-stagger-2 card-interactive bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
           <div>
-            <div class="h-48 overflow-hidden">
-              <img src="assets/images/salas/sala_SN4_media_46.jpg" alt="Salas de Formação Torre d’Aguilha" class="w-full h-full object-cover">
+            <div class="h-48 overflow-hidden img-zoom-container">
+              <img src="assets/images/salas/sala_SN4_media_46.jpg" alt="Salas de Formação Torre d’Aguilha" class="w-full h-full object-cover img-zoom-target">
             </div>
             <div class="p-5">
               <span class="text-[10px] font-bold uppercase tracking-wider text-[#547985] block mb-1">10 a 80 participantes</span>
@@ -451,10 +455,10 @@
         </div>
 
         <!-- Card 3: Apoio a Grupos & Retiros -->
-        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
+        <div class="scroll-reveal reveal-stagger-3 card-interactive bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs hover:border-[#173A46]/30 transition flex flex-col justify-between">
           <div>
-            <div class="h-48 overflow-hidden">
-              <img src="assets/images/galeria/foto_hotel_media_11.jpg" alt="Espaços para Retiros e Reflexão" class="w-full h-full object-cover">
+            <div class="h-48 overflow-hidden img-zoom-container">
+              <img src="assets/images/galeria/foto_hotel_media_11.jpg" alt="Espaços para Retiros e Reflexão" class="w-full h-full object-cover img-zoom-target">
             </div>
             <div class="p-5">
               <span class="text-[10px] font-bold uppercase tracking-wider text-[#547985] block mb-1">Restauração & Espiritualidade</span>
@@ -473,7 +477,7 @@
       </div>
 
       <div class="mt-8 text-center">
-        <a href="salas-eventos.html" class="inline-flex items-center gap-2 px-6 py-3.5 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-sm transition">
+        <a href="salas-eventos.html" class="btn-cta-sheen inline-flex items-center gap-2 px-6 py-3.5 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-sm transition">
           <span>Ver Tabela Completa de Salas & Pedir Orçamento</span>
           <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
@@ -495,26 +499,26 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-gray-700">
-              <div class="p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
+              <div class="card-interactive p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
                 <span class="font-bold text-[#173A46] block mb-0.5">Check-in & Check-out</span>
                 <span class="text-gray-500">Check-in às 14h00 | Check-out até às 12h00</span>
               </div>
-              <div class="p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
+              <div class="card-interactive p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
                 <span class="font-bold text-[#173A46] block mb-0.5">Estacionamento Gratuito</span>
                 <span class="text-gray-500">Recinto fechado com capacidade para automóveis e autocarros</span>
               </div>
-              <div class="p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
+              <div class="card-interactive p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
                 <span class="font-bold text-[#173A46] block mb-0.5">Pequeno-Almoço & Refeições</span>
                 <span class="text-gray-500">Disponível no hotel com excelente avaliação dos hóspedes</span>
               </div>
-              <div class="p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
+              <div class="card-interactive p-3 bg-white rounded-lg border border-gray-200 shadow-xs">
                 <span class="font-bold text-[#173A46] block mb-0.5">Localização Estratégica</span>
                 <span class="text-gray-500">A escassos minutos de Carcavelos, Sintra e Lisboa</span>
               </div>
             </div>
 
             <div class="pt-2">
-              <a href="faqs.html" class="inline-flex items-center gap-2 px-6 py-3.5 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-sm transition">
+              <a href="faqs.html" class="btn-cta-sheen inline-flex items-center gap-2 px-6 py-3.5 bg-[#173A46] hover:bg-[#0F242C] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-sm transition">
                 <span>Consultar Todas as Perguntas Frequentes</span>
                 <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
@@ -522,7 +526,7 @@
           </div>
 
           <!-- Mini Card de Apoio Direto e Localização -->
-          <div class="lg:col-span-5 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 shadow-sm space-y-5">
+          <div class="scroll-reveal lg:col-span-5 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 shadow-sm space-y-5 card-interactive">
             <div>
               <span class="text-[10px] font-bold uppercase tracking-wider text-[#547985] block mb-1">Apoio Personalizado</span>
               <h3 class="font-serif text-2xl font-bold text-[#173A46]">Precisa de ajuda imediata?</h3>
@@ -534,15 +538,15 @@
             <div class="space-y-2.5 text-xs text-gray-700 border-y border-gray-100 py-4">
               <div class="flex items-center justify-between">
                 <span class="text-gray-500">Telemóvel:</span>
-                <a href="tel:+351961628608" class="font-bold text-[#173A46] hover:text-[#C5A880] transition">+351 961 628 608</a>
+                <a href="tel:+351961628608" data-copy-text="+351 961 628 608" class="copy-on-click font-bold text-[#173A46] hover:text-[#C5A880] transition" title="Clique para copiar">+351 961 628 608</a>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-gray-500">Telefone Fixo:</span>
-                <a href="tel:+351214458440" class="font-bold text-[#173A46] hover:text-[#C5A880] transition">+351 214 458 440</a>
+                <a href="tel:+351214458440" data-copy-text="+351 214 458 440" class="copy-on-click font-bold text-[#173A46] hover:text-[#C5A880] transition" title="Clique para copiar">+351 214 458 440</a>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-gray-500">E-mail:</span>
-                <a href="mailto:acolhimento.sta@espiritanos.pt" class="font-bold text-[#173A46] hover:text-[#C5A880] transition">acolhimento.sta@espiritanos.pt</a>
+                <a href="mailto:acolhimento.sta@espiritanos.pt" data-copy-text="acolhimento.sta@espiritanos.pt" class="copy-on-click font-bold text-[#173A46] hover:text-[#C5A880] transition" title="Clique para copiar">acolhimento.sta@espiritanos.pt</a>
               </div>
             </div>
 
@@ -570,35 +574,35 @@
 
       <!-- Métricas Auditadas -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12 text-center">
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">9.38</span>
+        <div class="scroll-reveal reveal-stagger-1 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="9.38">9.38</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Limpeza</span>
         </div>
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">9.14</span>
+        <div class="scroll-reveal reveal-stagger-2 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="9.14">9.14</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Localização</span>
         </div>
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">8.90</span>
+        <div class="scroll-reveal reveal-stagger-3 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="8.90">8.90</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Atendimento</span>
         </div>
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">8.75</span>
+        <div class="scroll-reveal reveal-stagger-4 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="8.75">8.75</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Instalações</span>
         </div>
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">8.57</span>
+        <div class="scroll-reveal reveal-stagger-5 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="8.57">8.57</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Conforto</span>
         </div>
-        <div class="p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
-          <span class="block font-serif text-3xl font-bold text-[#173A46]">8.43</span>
+        <div class="scroll-reveal reveal-stagger-6 card-interactive p-4 bg-white rounded-xl border border-gray-200 shadow-xs hover:border-[#173A46]/20 transition">
+          <span class="block font-serif text-3xl font-bold text-[#173A46]" data-counter-target="8.43">8.43</span>
           <span class="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">Pequeno-Almoço</span>
         </div>
       </div>
 
       <!-- Testemunhos Editoriais -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-1 card-interactive bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
           <p class="text-gray-700 text-xs sm:text-sm italic mb-6 leading-relaxed font-light">
             "Um verdadeiro oásis de paz a poucos minutos de Cascais e Lisboa. A limpeza impecável e a gentileza dos funcionários fizeram-nos sentir verdadeiramente em casa."
           </p>
@@ -608,7 +612,7 @@
           </div>
         </div>
 
-        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-2 card-interactive bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
           <p class="text-gray-700 text-xs sm:text-sm italic mb-6 leading-relaxed font-light">
             "Realizámos aqui o nosso congresso institucional com 180 participantes. As salas têm excelente acústica, o parqueamento facilitou imenso e o ambiente dos jardins foi elogiado por todos."
           </p>
@@ -618,7 +622,7 @@
           </div>
         </div>
 
-        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
+        <div class="scroll-reveal reveal-stagger-3 card-interactive bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-xs flex flex-col justify-between hover:border-[#173A46]/30 transition">
           <p class="text-gray-700 text-xs sm:text-sm italic mb-6 leading-relaxed font-light">
             "Excelente relação qualidade-preço. Quartos sem barulho, camas confortáveis e o silêncio da noite permitiu-nos um descanso perfeito após dias intensos de passeio em Sintra."
           </p>
@@ -643,7 +647,7 @@
           Beneficie do menor preço garantido com o código promocional <strong class="text-[#E9E1D2] font-mono">DIRETO8</strong>, estacionamento privativo gratuito e atendimento personalizado da nossa equipa.
         </p>
         <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="reserva.html" class="w-full sm:w-auto px-8 py-4 bg-[#C5A880] hover:bg-[#B39366] text-[#0F242C] font-bold text-sm rounded-lg shadow-lg transition text-center">
+          <a href="reserva.html" class="btn-cta-sheen w-full sm:w-auto px-8 py-4 bg-[#C5A880] hover:bg-[#B39366] text-[#0F242C] font-bold text-sm rounded-lg shadow-lg transition text-center">
             Reservar Quarto (-8% Direto)
           </a>
           <a href="quartos.html" class="w-full sm:w-auto px-6 py-4 border border-white/20 hover:border-white text-white font-medium text-sm rounded-lg transition">

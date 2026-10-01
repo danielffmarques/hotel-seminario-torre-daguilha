@@ -12,6 +12,7 @@
 @import url('components/buttons.css');
 @import url('components/cards.css');
 @import url('components/carousel.css');
+@import url('components/interactions.css');
 
 /* 3. Estilos Específicos de Páginas */
 @import url('pages/booking.css');

@@ -1,0 +1,165 @@
+/* =========================================================
+   HOTEL SEMINÁRIO TORRE D'AGUILHA - INTERATIVIDADE & ANIMAÇÕES
+   Movimentos Suaves, Revelação no Scroll, Micro-interações e Efeitos
+   ========================================================= */
+
+/* 1. Revelação Suave ao Fazer Scroll (Scroll Reveal) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito de cascata / stagger para grelhas de cartões */
+.reveal-stagger-1 { transition-delay: 0.06s; }
+.reveal-stagger-2 { transition-delay: 0.12s; }
+.reveal-stagger-3 { transition-delay: 0.18s; }
+.reveal-stagger-4 { transition-delay: 0.24s; }
+.reveal-stagger-5 { transition-delay: 0.30s; }
+.reveal-stagger-6 { transition-delay: 0.36s; }
+
+/* 2. Elevação Nobre e Suave de Cartões (Card Lift & Shadow) */
+.card-interactive {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.35s ease;
+  will-change: transform, box-shadow;
+}
+
+.card-interactive:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 32px -10px rgba(15, 36, 44, 0.10), 0 8px 16px -6px rgba(15, 36, 44, 0.06);
+}
+
+/* 3. Zoom Suave nas Fotografias ao Passar o Rato */
+.img-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-zoom-container img,
+.img-zoom-target {
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+  will-change: transform;
+}
+
+.img-zoom-container:hover img,
+.img-zoom-container:hover .img-zoom-target {
+  transform: scale(1.05);
+}
+
+/* 4. Brilho Sutil e Transição nos Botões Principais */
+.btn-cta-sheen {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cta-sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.btn-cta-sheen:hover::after {
+  left: 140%;
+}
+
+.btn-cta-sheen:active {
+  transform: scale(0.98);
+}
+
+/* 5. Botão Flutuante Voltar ao Topo (Back to Top) */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 45;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background-color: var(--color-primary, #173A46);
+  color: #FAF9F6;
+  border: 1px solid rgba(197, 168, 128, 0.3);
+  box-shadow: 0 8px 24px -4px rgba(15, 36, 44, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.back-to-top-btn:hover {
+  background-color: #0F242C;
+  border-color: var(--color-accent, #C5A880);
+  color: var(--color-accent, #C5A880);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(15, 36, 44, 0.35);
+}
+
+.back-to-top-btn.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 6. Toast Flutuante de Notificação Elegante */
+.sta-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background-color: #173A46;
+  color: #FAF9F6;
+  border: 1px solid rgba(197, 168, 128, 0.4);
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sta-toast.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 7. Suporte a Redução de Movimento (Acessibilidade) */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .card-interactive,
+  .img-zoom-container img,
+  .btn-cta-sheen,
+  .back-to-top-btn {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .btn-cta-sheen::after {
+    display: none !important;
+  }
+}

@@ -861,6 +861,181 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================
+  // 9. INTERATIVIDADE, SCROLL REVEAL & ANIMAÇÕES SUAVES
+  // =========================================================
+  function initInteractions() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // 1. Scroll Reveal com IntersectionObserver
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    if (revealElements.length) {
+      if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+        revealElements.forEach(el => el.classList.add('is-revealed'));
+      } else {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          root: null,
+          rootMargin: '0px 0px -40px 0px',
+          threshold: 0.10
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+      }
+    }
+
+    // 2. Contadores Numéricos Suaves
+    const counters = document.querySelectorAll('[data-counter-target]');
+    if (counters.length) {
+      if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+        counters.forEach(counter => {
+          counter.textContent = counter.getAttribute('data-counter-target');
+        });
+      } else {
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.25 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+      }
+    }
+
+    function animateCounter(el) {
+      const targetStr = el.getAttribute('data-counter-target') || el.textContent.trim();
+      const target = parseFloat(targetStr);
+      if (isNaN(target)) return;
+
+      const isDecimal = targetStr.includes('.');
+      const decimals = isDecimal ? targetStr.split('.')[1].length : 0;
+      const duration = 1400;
+      const startTime = performance.now();
+
+      function updateCount(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const currentVal = easeProgress * target;
+
+        el.textContent = isDecimal ? currentVal.toFixed(decimals) : Math.floor(currentVal);
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCount);
+        } else {
+          el.textContent = targetStr;
+        }
+      }
+
+      requestAnimationFrame(updateCount);
+    }
+
+    // 3. Botão Flutuante Voltar ao Topo (Back to Top)
+    let backToTopBtn = document.getElementById('back-to-top');
+    if (!backToTopBtn) {
+      backToTopBtn = document.createElement('button');
+      backToTopBtn.id = 'back-to-top';
+      backToTopBtn.className = 'back-to-top-btn';
+      backToTopBtn.setAttribute('aria-label', 'Voltar ao topo da página');
+      backToTopBtn.setAttribute('title', 'Voltar ao topo');
+      backToTopBtn.innerHTML = `
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+        </svg>
+      `;
+      document.body.appendChild(backToTopBtn);
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 380) {
+            backToTopBtn.classList.add('is-active');
+          } else {
+            backToTopBtn.classList.remove('is-active');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    backToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // 4. Parallax Suave no Hero
+    const heroSection = document.getElementById('hero-section');
+    if (heroSection && !prefersReducedMotion) {
+      const heroImg = heroSection.querySelector('img');
+      if (heroImg) {
+        let heroTicking = false;
+        window.addEventListener('scroll', () => {
+          if (!heroTicking) {
+            window.requestAnimationFrame(() => {
+              const scrollY = window.scrollY;
+              if (scrollY < heroSection.offsetHeight) {
+                const offset = scrollY * 0.14;
+                heroImg.style.transform = `translate3d(0, ${offset}px, 0) scale(1.02)`;
+              }
+              heroTicking = false;
+            });
+            heroTicking = true;
+          }
+        }, { passive: true });
+      }
+    }
+
+    // 5. Toast Feedback para Contactos
+    let toastEl = document.getElementById('sta-toast');
+    if (!toastEl) {
+      toastEl = document.createElement('div');
+      toastEl.id = 'sta-toast';
+      toastEl.className = 'sta-toast';
+      document.body.appendChild(toastEl);
+    }
+
+    window.showStaToast = function(message, duration = 3000) {
+      toastEl.innerHTML = `
+        <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+        </svg>
+        <span>${message}</span>
+      `;
+      toastEl.classList.add('is-active');
+
+      setTimeout(() => {
+        toastEl.classList.remove('is-active');
+      }, duration);
+    };
+
+    // Copiar contacto com um clique e feedback suave
+    document.querySelectorAll('.copy-on-click').forEach(item => {
+      item.addEventListener('click', (e) => {
+        const textToCopy = item.getAttribute('data-copy-text') || item.textContent.trim();
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            window.showStaToast('Copiado para a área de transferência: ' + textToCopy);
+          });
+        }
+      });
+    });
+  }
+
+  // =========================================================
   // INICIALIZAÇÃO DE TODOS OS MÓDULOS
   // =========================================================
   initNavigation();
@@ -871,5 +1046,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initGallery();
   initContactForms();
   initBookingEngine();
+  initInteractions();
 
 });

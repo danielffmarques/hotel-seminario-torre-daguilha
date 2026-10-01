@@ -479,66 +479,192 @@
           </div>
         </div>
 
-        <!-- Lista em 2 Colunas com Distinção de Cores -->
+        <!-- Lista em 2 Colunas com Cartões Interativos e Expansíveis -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
           
           <!-- Coluna 1 -->
           <div class="space-y-3">
             
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">São Domingos de Rana</h3>
-                <span class="text-xs text-gray-500">Centro da vila, Cascais</span>
+            <!-- 1. São Domingos de Rana -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">São Domingos de Rana</h3>
+                  <span class="text-xs text-gray-500">Centro da vila, Cascais</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">1.1 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/sao_domingos_rana.jpg" alt="São Domingos de Rana" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    O coração acolhedor da freguesia, onde a atmosfera serena do seminário encontra o comércio tradicional, praças ajardinadas e serviços de proximidade.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">1.1 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-sky-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Praia de Carcavelos</h3>
-                <span class="text-xs text-gray-500">Costa do Estoril, Cascais</span>
+            <!-- 2. Praia de Carcavelos -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-sky-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Praia de Carcavelos</h3>
+                  <span class="text-xs text-gray-500">Costa do Estoril, Cascais</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">2.7 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/praia_carcavelos.jpg" alt="Praia de Carcavelos" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    A maior e mais afamada praia da Linha de Cascais. Notabiliza-se pelo surf internacional, pelas areias douradas e pelo histórico Forte de São Julião da Barra a guardar o horizonte marítimo.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">2.7 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Estação de Comboios de Carcavelos</h3>
-                <span class="text-xs text-gray-500">Linha de Cascais (CP)</span>
+            <!-- 3. Estação de Comboios de Carcavelos -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Estação de Comboios de Carcavelos</h3>
+                  <span class="text-xs text-gray-500">Linha de Cascais (CP)</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">2.7 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/estacao_carcavelos.jpg" alt="Estação de Comboios de Carcavelos" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Ligação rápida e cénica junto ao rio e mar até Lisboa (Cais do Sodré) ou a Cascais. Dispõe de praça de táxis, TVDE e paragens de autocarros com rota direta ao hotel.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">2.7 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-sky-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Praia da Parede</h3>
-                <span class="text-xs text-gray-500">Parede, Cascais</span>
+            <!-- 4. Praia da Parede -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-sky-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Praia da Parede</h3>
+                  <span class="text-xs text-gray-500">Parede, Cascais</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">5.5 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/praia_parede.jpg" alt="Praia da Parede" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Reconhecida historicamente pela elevada concentração de iodo benéfico para a saúde e bem-estar. Um areal protegido por rochedos com esplanadas tranquilas viradas ao poente.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">5.5 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Palácio Nacional da Pena</h3>
-                <span class="text-xs text-gray-500">Serra de Sintra</span>
+            <!-- 5. Palácio Nacional da Pena -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Palácio Nacional da Pena</h3>
+                  <span class="text-xs text-gray-500">Serra de Sintra</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">9.5 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/palacio_pena.jpg" alt="Palácio Nacional da Pena" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Expoente máximo do Romantismo português e Património Mundial da UNESCO. Um castelo colorido de sonho coroando o topo da serra com panorâmicas incomparáveis.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">9.5 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Castelo dos Mouros</h3>
-                <span class="text-xs text-gray-500">Serra de Sintra</span>
+            <!-- 6. Castelo dos Mouros -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Castelo dos Mouros</h3>
+                  <span class="text-xs text-gray-500">Serra de Sintra</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">10.0 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/castelo_mouros.jpg" alt="Castelo dos Mouros" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Muralhas medievais imponentes do século VIII incrustadas nos rochedos de granito, oferecendo uma das caminhadas históricas mais deslumbrantes sobre o vale de Sintra.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.0 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Quinta da Regaleira</h3>
-                <span class="text-xs text-gray-500">Vila de Sintra</span>
+            <!-- 7. Quinta da Regaleira -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Quinta da Regaleira</h3>
+                  <span class="text-xs text-gray-500">Vila de Sintra</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">10.5 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/quinta_regaleira.jpg" alt="Quinta da Regaleira" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    O mítico jardim iniciático pontuado pelo célebre Poço em espiral, passagens subterrâneas secretas e um palacete repleto de simbolismo maçónico e templário.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.5 km</span>
             </div>
 
           </div>
@@ -546,60 +672,186 @@
           <!-- Coluna 2 -->
           <div class="space-y-3">
             
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Torre de Belém</h3>
-                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+            <!-- 8. Torre de Belém -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Torre de Belém</h3>
+                  <span class="text-xs text-gray-500">Belém, Lisboa</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">10.9 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/torre_belem.jpg" alt="Torre de Belém" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Marco de referência universal erguido nas margens do Tejo. Uma joia arquitetónica manuelina que simboliza a grandeza das viagens dos navegadores portugueses.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">10.9 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Mosteiro dos Jerónimos</h3>
-                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+            <!-- 9. Mosteiro dos Jerónimos -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Mosteiro dos Jerónimos</h3>
+                  <span class="text-xs text-gray-500">Belém, Lisboa</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">11.7 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/mosteiro_jeronimos.jpg" alt="Mosteiro dos Jerónimos" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Suntuoso monumento do século XVI com claustros de pedra de beleza única. Abriga a memória e túmulos das maiores figuras históricas e literárias de Portugal.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.7 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Padrão dos Descobrimentos</h3>
-                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+            <!-- 10. Padrão dos Descobrimentos -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-amber-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Padrão dos Descobrimentos</h3>
+                  <span class="text-xs text-gray-500">Belém, Lisboa</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">11.8 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/padrao_descobrimentos.jpg" alt="Padrão dos Descobrimentos" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Homenagem escultural em forma de caravela apontada ao estuário, encimada pelo Infante D. Henrique e figuras de proa da época de ouro da expansão atlântica.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.8 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Pastéis de Belém</h3>
-                <span class="text-xs text-gray-500">Belém, Lisboa</span>
+            <!-- 11. Pastéis de Belém -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Pastéis de Belém</h3>
+                  <span class="text-xs text-gray-500">Belém, Lisboa</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">11.9 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/pasteis_belem.jpg" alt="Pastéis de Belém" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    A histórica fábrica que perpetua a receita conventual desde 1837. Uma paragem obrigatória para provar a massa estaladiça e o creme quente com canela.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">11.9 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Vila Histórica e Marina de Cascais</h3>
-                <span class="text-xs text-gray-500">Cascais</span>
+            <!-- 12. Vila Histórica e Marina de Cascais -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-emerald-600 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Vila Histórica e Marina de Cascais</h3>
+                  <span class="text-xs text-gray-500">Cascais</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">12.0 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/marina_cascais.jpg" alt="Vila Histórica e Marina de Cascais" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    O encanto aristocrático de uma vila costeira com rica história, museus, praias abrigadas, calçada tradicional e marina repleta de restauração de peixe e marisco.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">12.0 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Ponte 25 de Abril</h3>
-                <span class="text-xs text-gray-500">Ligação Lisboa – Almada</span>
+            <!-- 13. Ponte 25 de Abril -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Ponte 25 de Abril</h3>
+                  <span class="text-xs text-gray-500">Ligação Lisboa – Almada</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">14.2 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/ponte_25_abril.jpg" alt="Ponte 25 de Abril" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    Ponte suspensa de renome mundial a cruzar as águas largas do Tejo. Proporciona travessias memoráveis com vista para o Cristo Rei e a silhueta luminosa de Lisboa.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">14.2 km</span>
             </div>
 
-            <div class="flex items-center justify-between py-3 px-4 bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition">
-              <div>
-                <h3 class="font-semibold text-sm text-[#173A46]">Aeroporto Humberto Delgado</h3>
-                <span class="text-xs text-gray-500">Lisboa</span>
+            <!-- 14. Aeroporto Humberto Delgado -->
+            <div class="regiao-card bg-white rounded-xl border border-gray-200 border-l-4 border-l-indigo-500 shadow-xs hover:border-[#173A46]/30 transition overflow-hidden">
+              <button type="button" class="regiao-card-header w-full text-left py-3 px-4 flex items-center justify-between gap-3 focus:outline-none cursor-pointer group">
+                <div class="flex-grow">
+                  <h3 class="font-semibold text-sm text-[#173A46] group-hover:text-[#0F242C] transition">Aeroporto Humberto Delgado</h3>
+                  <span class="text-xs text-gray-500">Lisboa</span>
+                </div>
+                <div class="flex items-center gap-2.5 flex-shrink-0">
+                  <span class="text-sm font-bold text-[#173A46] whitespace-nowrap">19.1 km</span>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-[#173A46] transition-transform duration-300 regiao-arrow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="regiao-details hidden px-4 pb-4 pt-1 border-t border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center">
+                  <div class="sm:col-span-5 h-28 sm:h-32 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 shadow-2xs">
+                    <img src="assets/images/regiao/aeroporto_lisboa.jpg" alt="Aeroporto Humberto Delgado" class="w-full h-full object-cover" loading="lazy">
+                  </div>
+                  <div class="sm:col-span-7 text-xs text-gray-600 leading-relaxed font-light">
+                    O principal hub aéreo de Portugal com ligações diretas a todos os continentes. Acesso desimpedido e direto via A5 em cerca de 20 a 25 minutos de automóvel.
+                  </div>
+                </div>
               </div>
-              <span class="text-sm font-bold text-[#173A46] whitespace-nowrap ml-4">19.1 km</span>
             </div>
 
           </div>

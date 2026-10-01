@@ -409,43 +409,78 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // =========================================================
-  // 4. ACORDEÕES DE FAQS & ALINHAMENTO STICKY
+  // 4. ACORDEÕES DE FAQS, PONTOS DE INTERESSE & ALINHAMENTO STICKY
   // =========================================================
   function initFaqs() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    if (faqItems.length === 0) return;
+    // 4.1 Cartões Interativos da Região / Pontos de Interesse (faqs.html)
+    const regiaoCards = document.querySelectorAll('.regiao-card');
+    if (regiaoCards.length > 0) {
+      regiaoCards.forEach(card => {
+        const headerBtn = card.querySelector('.regiao-card-header');
+        const details = card.querySelector('.regiao-details');
+        const arrow = card.querySelector('.regiao-arrow');
 
-    faqItems.forEach(item => {
-      const btn = item.querySelector('.faq-button');
-      const content = item.querySelector('.faq-content');
-      const icon = item.querySelector('.faq-icon');
-      const symbol = item.querySelector('.faq-symbol');
+        headerBtn?.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isOpen = !details.classList.contains('hidden');
 
-      btn?.addEventListener('click', () => {
-        const isOpen = !content.classList.contains('hidden');
+          // Fecha outros cartões para manter foco visual limpo
+          regiaoCards.forEach(otherCard => {
+            if (otherCard !== card) {
+              otherCard.querySelector('.regiao-details')?.classList.add('hidden');
+              otherCard.querySelector('.regiao-arrow')?.classList.remove('rotate-180');
+              otherCard.classList.remove('ring-2', 'ring-[#173A46]/20', 'shadow-md');
+            }
+          });
 
-        faqItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            const otherContent = otherItem.querySelector('.faq-content');
-            const otherIcon = otherItem.querySelector('.faq-icon');
-            const otherSymbol = otherItem.querySelector('.faq-symbol');
-            otherContent?.classList.add('hidden');
-            otherIcon?.classList.remove('rotate-180');
-            if (otherSymbol) otherSymbol.textContent = '+';
+          if (isOpen) {
+            details.classList.add('hidden');
+            arrow?.classList.remove('rotate-180');
+            card.classList.remove('ring-2', 'ring-[#173A46]/20', 'shadow-md');
+          } else {
+            details.classList.remove('hidden');
+            arrow?.classList.add('rotate-180');
+            card.classList.add('ring-2', 'ring-[#173A46]/20', 'shadow-md');
           }
         });
-
-        if (isOpen) {
-          content.classList.add('hidden');
-          icon?.classList.remove('rotate-180');
-          if (symbol) symbol.textContent = '+';
-        } else {
-          content.classList.remove('hidden');
-          icon?.classList.add('rotate-180');
-          if (symbol) symbol.textContent = '−';
-        }
       });
-    });
+    }
+
+    // 4.2 Acordeões Tradicionais de FAQ
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length > 0) {
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-button');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+        const symbol = item.querySelector('.faq-symbol');
+
+        btn?.addEventListener('click', () => {
+          const isOpen = !content.classList.contains('hidden');
+
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              const otherContent = otherItem.querySelector('.faq-content');
+              const otherIcon = otherItem.querySelector('.faq-icon');
+              const otherSymbol = otherItem.querySelector('.faq-symbol');
+              otherContent?.classList.add('hidden');
+              otherIcon?.classList.remove('rotate-180');
+              if (otherSymbol) otherSymbol.textContent = '+';
+            }
+          });
+
+          if (isOpen) {
+            content.classList.add('hidden');
+            icon?.classList.remove('rotate-180');
+            if (symbol) symbol.textContent = '+';
+          } else {
+            content.classList.remove('hidden');
+            icon?.classList.add('rotate-180');
+            if (symbol) symbol.textContent = '−';
+          }
+        });
+      });
+    }
 
     const faqsQuestionsList = document.getElementById('faqs-questions-list');
     const faqStickyContainer = document.getElementById('faq-sticky-container');

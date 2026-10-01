@@ -3,7 +3,43 @@
  * Gere os acordeões interativos e alinhamento de altura da coluna sticky.
  */
 
+export function initRegiaoCards() {
+  const regiaoCards = document.querySelectorAll('.regiao-card');
+  if (regiaoCards.length === 0) return;
+
+  regiaoCards.forEach(card => {
+    const headerBtn = card.querySelector('.regiao-card-header');
+    const details = card.querySelector('.regiao-details');
+    const arrow = card.querySelector('.regiao-arrow');
+
+    headerBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isOpen = !details.classList.contains('hidden');
+
+      // Fecha outros cartões para manter foco visual limpo
+      regiaoCards.forEach(otherCard => {
+        if (otherCard !== card) {
+          otherCard.querySelector('.regiao-details')?.classList.add('hidden');
+          otherCard.querySelector('.regiao-arrow')?.classList.remove('rotate-180');
+          otherCard.classList.remove('ring-2', 'ring-[#173A46]/20', 'shadow-md');
+        }
+      });
+
+      if (isOpen) {
+        details.classList.add('hidden');
+        arrow?.classList.remove('rotate-180');
+        card.classList.remove('ring-2', 'ring-[#173A46]/20', 'shadow-md');
+      } else {
+        details.classList.remove('hidden');
+        arrow?.classList.add('rotate-180');
+        card.classList.add('ring-2', 'ring-[#173A46]/20', 'shadow-md');
+      }
+    });
+  });
+}
+
 export function initFaqs() {
+  initRegiaoCards();
   const faqItems = document.querySelectorAll('.faq-item');
   if (faqItems.length === 0) return;
 

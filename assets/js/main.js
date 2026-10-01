@@ -1140,29 +1140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // 4. Parallax Suave no Hero
-    const heroSection = document.getElementById('hero-section');
-    if (heroSection && !prefersReducedMotion) {
-      const heroImg = heroSection.querySelector('img');
-      if (heroImg) {
-        let heroTicking = false;
-        window.addEventListener('scroll', () => {
-          if (!heroTicking) {
-            window.requestAnimationFrame(() => {
-              const scrollY = window.scrollY;
-              if (scrollY < heroSection.offsetHeight) {
-                const offset = scrollY * 0.14;
-                heroImg.style.transform = `translate3d(0, ${offset}px, 0) scale(1.02)`;
-              }
-              heroTicking = false;
-            });
-            heroTicking = true;
-          }
-        }, { passive: true });
-      }
-    }
-
-    // 5. Toast Feedback para Contactos
+    // 4. Toast Feedback para Contactos
     let toastEl = document.getElementById('sta-toast');
     if (!toastEl) {
       toastEl = document.createElement('div');

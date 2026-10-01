@@ -15,12 +15,7 @@ export function initInteractions() {
   // 3. BOTÃO VOLTAR AO TOPO (BACK TO TOP)
   initBackToTop();
 
-  // 4. PARALLAX SUAVE NO HERO
-  if (!prefersReducedMotion) {
-    initHeroParallax();
-  }
-
-  // 5. TOAST FEEDBACK DE CONTACTO RÁPIDO
+  // 4. TOAST FEEDBACK DE CONTACTO RÁPIDO
   initQuickFeedback();
 }
 
@@ -155,34 +150,6 @@ function initBackToTop() {
   });
 }
 
-/**
- * 4. Parallax Suave e Leve na Imagem do Hero
- */
-function initHeroParallax() {
-  const heroSection = document.getElementById('hero-section');
-  if (!heroSection) return;
-
-  const heroImg = heroSection.querySelector('img');
-  if (!heroImg) return;
-
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const scrollY = window.scrollY;
-        const heroHeight = heroSection.offsetHeight;
-
-        if (scrollY < heroHeight) {
-          // Deslocamento sutil de 12% para profundidade suave sem saltos
-          const offset = scrollY * 0.14;
-          heroImg.style.transform = `translate3d(0, ${offset}px, 0) scale(1.02)`;
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-}
 
 /**
  * 5. Toast Feedback para Ações Interativas (Ex: Copiar contactos)

@@ -152,13 +152,14 @@
           </div>
 
           <!-- Seleção da Tipologia de Quarto (Cartões Selecionáveis) -->
+          <!-- Seleção da Tipologia de Quarto (Cartões Selecionáveis) -->
           <div>
             <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-3">Escolha a Tipologia de Quarto *</label>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               
               <!-- Quarto Ala Moderna -->
               <label class="room-choice-card relative flex flex-col justify-between p-4 rounded-xl border-2 border-[#173A46] bg-[#FAF9F6] cursor-pointer transition select-none hover:shadow-sm">
-                <input type="radio" name="selected_room" value="Quarto Ala Moderna" data-price="75" checked class="sr-only room-radio">
+                <input type="radio" name="selected_room" value="Quarto Ala Moderna" data-price="73" data-price-nr="67.16" data-price-flex="73.00" checked class="sr-only room-radio">
                 <div>
                   <div class="relative h-40 rounded-lg overflow-hidden mb-3">
                     <img src="assets/images/quartos/quarto_foto_67_media_67.jpg" alt="Quarto Ala Moderna" class="w-full h-full object-cover">
@@ -173,8 +174,8 @@
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between">
                   <div class="text-xs text-gray-500">
-                    <span class="line-through text-gray-400">75 €</span>
-                    <span class="text-sm font-bold text-[#173A46] ml-1">69.00 € / noite</span>
+                    <span class="line-through text-gray-400">73,00 €</span>
+                    <span class="text-sm font-bold text-[#173A46] ml-1">a partir de 67,16 €</span>
                   </div>
                   <span class="room-selected-badge text-xs font-bold text-[#173A46] flex items-center gap-1">
                     ✓ Selecionado
@@ -184,7 +185,7 @@
 
               <!-- Quarto Ala Clássica -->
               <label class="room-choice-card relative flex flex-col justify-between p-4 rounded-xl border-2 border-gray-200 bg-white cursor-pointer transition select-none hover:border-gray-300 hover:shadow-sm">
-                <input type="radio" name="selected_room" value="Quarto Ala Clássica" data-price="65" class="sr-only room-radio">
+                <input type="radio" name="selected_room" value="Quarto Ala Clássica" data-price="65" data-price-nr="59.80" data-price-flex="65.00" class="sr-only room-radio">
                 <div>
                   <div class="relative h-40 rounded-lg overflow-hidden mb-3">
                     <img src="assets/images/quartos/quarto_foto_71_media_71.jpg" alt="Quarto Ala Clássica" class="w-full h-full object-cover">
@@ -198,8 +199,8 @@
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between">
                   <div class="text-xs text-gray-500">
-                    <span class="line-through text-gray-400">65 €</span>
-                    <span class="text-sm font-bold text-[#173A46] ml-1">59.80 € / noite</span>
+                    <span class="line-through text-gray-400">65,00 €</span>
+                    <span class="text-sm font-bold text-[#173A46] ml-1">a partir de 59,80 €</span>
                   </div>
                   <span class="room-selected-badge hidden text-xs font-bold text-[#173A46] flex items-center gap-1">
                     ✓ Selecionado
@@ -210,14 +211,71 @@
             </div>
           </div>
 
-          <!-- Código Promocional Aplicado -->
+          <!-- Seleção da Opção de Tarifa & Cancelamento -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-3">
+              Opção de Tarifa & Condições de Cancelamento *
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Opção 1: Tarifa Não Reembolsável (-8%) -->
+              <label class="rate-choice-card relative flex flex-col justify-between p-4 rounded-xl border-2 border-[#173A46] bg-[#FAF9F6] cursor-pointer transition select-none hover:shadow-sm">
+                <input type="radio" name="selected_rate" value="nao_reembolsavel" checked class="sr-only rate-radio">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-[#173A46] uppercase tracking-wider">Preço de Oferta</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#173A46] text-white">-8%</span>
+                  </div>
+                  <div class="mb-2">
+                    <span id="rate-display-nr-old" class="text-xs text-gray-400 line-through">73,00 €</span>
+                    <span id="rate-display-nr-price" class="text-2xl font-serif font-bold text-[#173A46] ml-1.5">67,16 €</span>
+                    <span class="text-[11px] text-gray-500 block -mt-0.5">/ noite • Impostos incluídos</span>
+                  </div>
+                  <p class="text-[11px] text-gray-500 leading-tight mb-2">
+                    Não reembolsável. O valor total cobrar-se-á ao confirmar a reserva.
+                  </p>
+                </div>
+                <div class="mt-3 pt-2.5 border-t border-gray-200 flex items-center justify-between">
+                  <span class="text-[11px] font-bold text-[#A88B63]">8% Desconto Direto</span>
+                  <span class="rate-selected-badge text-xs font-bold text-[#173A46] flex items-center gap-1">
+                    ✓ Selecionado
+                  </span>
+                </div>
+              </label>
+
+              <!-- Opção 2: Cancelamento Gratuito / Flexível -->
+              <label class="rate-choice-card relative flex flex-col justify-between p-4 rounded-xl border-2 border-gray-200 bg-white cursor-pointer transition select-none hover:border-gray-300 hover:shadow-sm">
+                <input type="radio" name="selected_rate" value="flexivel" class="sr-only rate-radio">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-gray-700 uppercase tracking-wider">Cancelamento Gratuito</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Flexível</span>
+                  </div>
+                  <div class="mb-2">
+                    <span id="rate-display-flex-price" class="text-2xl font-serif font-bold text-[#173A46]">73,00 €</span>
+                    <span class="text-[11px] text-gray-500 block -mt-0.5">/ noite • Impostos incluídos</span>
+                  </div>
+                  <p class="text-[11px] text-gray-500 leading-tight mb-2">
+                    Cancelamento gratuito a qualquer momento até 48h antes do check-in.
+                  </p>
+                </div>
+                <div class="mt-3 pt-2.5 border-t border-gray-200 flex items-center justify-between">
+                  <span class="text-[11px] font-bold text-emerald-700">Total Flexibilidade</span>
+                  <span class="rate-selected-badge hidden text-xs font-bold text-[#173A46] flex items-center gap-1">
+                    ✓ Selecionado
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Resumo Rápido da Seleção -->
           <div class="p-4 bg-[#FAF9F6] rounded-xl border border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div class="flex items-center gap-2">
-              <span class="px-2 py-1 rounded bg-[#C5A880]/20 text-[#173A46] font-mono font-bold text-xs">DIRETO8</span>
-              <span class="text-xs text-gray-700"><strong>8% de Desconto Direto</strong> ativo na sua estadia oficial.</span>
+              <span id="step1-promo-badge" class="px-2 py-1 rounded bg-[#C5A880]/20 text-[#173A46] font-mono font-bold text-xs">DIRETO8 (-8%)</span>
+              <span id="step1-rate-desc" class="text-xs text-gray-700"><strong>Tarifa Não Reembolsável</strong> selecionada com desconto direto.</span>
             </div>
             <div class="text-xs text-gray-500">
-              Estadia calculada: <strong id="step1-nights-count">1</strong> noite(s) • Total est.: <strong id="step1-estimated-price" class="text-sm text-[#173A46]">69.00 €</strong>
+              Estadia calculada: <strong id="step1-nights-count">1</strong> noite(s) • Total est.: <strong id="step1-estimated-price" class="text-sm text-[#173A46]">67.16 €</strong>
             </div>
           </div>
 
@@ -465,11 +523,11 @@
               </label>
             </div>
 
-            <!-- Política de Cancelamento -->
-            <div class="p-3.5 bg-emerald-50 rounded-lg border border-emerald-200 text-xs text-emerald-800 flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <div>
-                <strong>Cancelamento Gratuito:</strong> Pode cancelar ou alterar a sua reserva sem qualquer custo até 48 horas antes da data de check-in.
+            <!-- Política de Cancelamento Dinâmica -->
+            <div id="booking-policy-box" class="p-3.5 bg-amber-50 rounded-lg border border-amber-200 text-xs text-amber-900 flex items-start gap-2.5">
+              <svg id="booking-policy-icon" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              <div id="booking-policy-text">
+                <strong>Tarifa Não Reembolsável:</strong> O valor total é cobrado ao confirmar para garantir o desconto direto de 8%. Não são permitidos cancelamentos ou reembolsos.
               </div>
             </div>
           </div>
@@ -484,6 +542,10 @@
               <div class="flex justify-between">
                 <span>Tipologia:</span>
                 <strong id="summary-room-name" class="text-gray-900 text-right">Quarto Ala Moderna</strong>
+              </div>
+              <div class="flex justify-between">
+                <span>Tarifa:</span>
+                <strong id="summary-rate-name" class="text-gray-900 text-right">Não Reembolsável (-8%)</strong>
               </div>
               <div class="flex justify-between">
                 <span>Período:</span>
@@ -502,11 +564,11 @@
             <div class="pt-3 border-t border-gray-200 space-y-2 text-xs">
               <div class="flex justify-between text-gray-600">
                 <span>Valor Base:</span>
-                <span id="summary-base-price">75.00 €</span>
+                <span id="summary-base-price">73.00 €</span>
               </div>
-              <div class="flex justify-between text-emerald-700 font-semibold">
-                <span>Desconto Direto (8% DIRETO8):</span>
-                <span id="summary-discount">-6.00 €</span>
+              <div id="summary-discount-row" class="flex justify-between text-emerald-700 font-semibold">
+                <span>Desconto Direto (-8%):</span>
+                <span id="summary-discount">-5.84 €</span>
               </div>
               <div class="flex justify-between text-gray-600">
                 <span>Estacionamento Privativo:</span>
@@ -518,7 +580,7 @@
               </div>
               <div class="pt-2 border-t border-gray-300 flex justify-between items-baseline">
                 <span class="text-sm font-bold text-[#173A46]">Total a Pagar:</span>
-                <span id="summary-final-total" class="font-serif text-2xl font-bold text-[#173A46]">69.00 €</span>
+                <span id="summary-final-total" class="font-serif text-2xl font-bold text-[#173A46]">67.16 €</span>
               </div>
               <span class="block text-[10px] text-gray-400 text-right">IVA incluído à taxa legal em vigor</span>
             </div>
@@ -533,7 +595,6 @@
               </button>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -570,8 +631,9 @@
           <div class="space-y-1.5 text-xs text-gray-700">
             <p><strong>Hóspede:</strong> <span id="confirmed-guest-name">Teresa Ferreira</span></p>
             <p><strong>Quarto:</strong> <span id="confirmed-room-type">Quarto Duplo Ala Moderna</span></p>
+            <p><strong>Opção de Tarifa:</strong> <span id="confirmed-rate-type" class="font-bold text-[#173A46]">Preço de Oferta (-8%) • Não Reembolsável</span></p>
             <p><strong>Período:</strong> <span id="confirmed-dates">Datas confirmadas</span></p>
-            <p><strong>Valor Total Pago:</strong> <span id="confirmed-total" class="font-bold text-[#173A46]">69.00 €</span></p>
+            <p><strong>Valor Total Pago:</strong> <span id="confirmed-total" class="font-bold text-[#173A46]">67.16 €</span></p>
           </div>
 
           <!-- Mensagem de envio de confirmação para o email -->
